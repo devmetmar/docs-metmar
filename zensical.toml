@@ -290,6 +290,11 @@ scheme = "slate"
 toggle.icon = "lucide/moon"
 toggle.name = "Switch to light mode"
 
+# [project.extra]
+# alternate = [
+#     { name = "English", link = "/en/", lang = "en" },
+#     { name = "Indonesia", link = "/", lang = "id" }
+# ]
 # ----------------------------------------------------------------------------
 # In the "font" subsection you can configure the fonts used. By default, fonts
 # are loaded from Google Fonts, giving you a wide range of choices from a set
