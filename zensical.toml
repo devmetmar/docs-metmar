@@ -50,7 +50,7 @@ nav = [
     #     "zensical/markdown.md"
     # ]},
     {"Home" = "index.md"},
-    { "INACAWO" = [
+    { "InaCAWO" = [
         "inacawo/index.md",
         {"Overview" = [
             # "inacawo/index.md",
@@ -331,4 +331,7 @@ toggle.name = "Switch to light mode"
 #icon = "fontawesome/brands/github"
 #link = "https://github.com/user/repo"
 
-
+extra_javascript = [
+  "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js",
+  "javascripts/mermaid-init.js"
+]

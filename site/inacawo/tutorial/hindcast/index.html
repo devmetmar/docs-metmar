@@ -241,7 +241,7 @@
         <a href="../../" class="md-tabs__link">
           
   
-  INACAWO
+  InaCAWO
 
         </a>
       </li>
@@ -357,7 +357,7 @@
   <span class="md-ellipsis">
     
   
-    INACAWO
+    InaCAWO
   
 
     
@@ -379,7 +379,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    INACAWO
+    InaCAWO
   
 
           </label>
@@ -730,6 +730,28 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#general-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        General Workflow
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configurations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configurations
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#dependencies" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -769,6 +791,34 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#preparing-the-working-directory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Preparing The Working Directory
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Preparing The Working Directory">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modifying-envsh" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modifying env.sh
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#global-reanalysis-data-acquisition" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -788,34 +838,6 @@
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="ERA5 Atmospheric Data">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#3d-data" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3D Data
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2d-data" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2D Data
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -843,6 +865,239 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pre-processing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pre Processing
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pre Processing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#wrf-forcing-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        WRF Forcing Files
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#swan-forcing-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SWAN Forcing Files
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#roms-forcing-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ROMS Forcing Files
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ROMS Forcing Files">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-generate-templates-for-icbc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1 Generate templates for ic/bc
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-populate-templates-for-icbc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2 Populate templates for ic/bc
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#running-the-hindcast" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Running the Hindcast
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Running the Hindcast">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#compiling-coawst" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Compiling COAWST
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#running-scheme" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Running Scheme
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modifying-namelist-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modifying Namelist Files
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#copying-input-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Copying input files
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#running-a-day-cycle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Running a day cycle
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#running-automation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Running automation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#post-processing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Post Processing
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Post Processing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#wrf2d" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        WRF2D
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wrf3d" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        WRF3D
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ocean2d" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ocean2D
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ocean3d" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ocean3D
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary-and-common-problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Summary and Common Problems
+      
+    </span>
+  </a>
   
 </li>
       
@@ -948,6 +1203,28 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#general-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        General Workflow
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configurations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configurations
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#dependencies" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -987,6 +1264,34 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#preparing-the-working-directory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Preparing The Working Directory
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Preparing The Working Directory">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modifying-envsh" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modifying env.sh
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#global-reanalysis-data-acquisition" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1006,34 +1311,6 @@
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="ERA5 Atmospheric Data">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#3d-data" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3D Data
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2d-data" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2D Data
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -1061,6 +1338,239 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pre-processing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pre Processing
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pre Processing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#wrf-forcing-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        WRF Forcing Files
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#swan-forcing-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SWAN Forcing Files
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#roms-forcing-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ROMS Forcing Files
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ROMS Forcing Files">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-generate-templates-for-icbc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1 Generate templates for ic/bc
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-populate-templates-for-icbc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2 Populate templates for ic/bc
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#running-the-hindcast" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Running the Hindcast
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Running the Hindcast">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#compiling-coawst" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Compiling COAWST
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#running-scheme" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Running Scheme
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modifying-namelist-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modifying Namelist Files
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#copying-input-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Copying input files
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#running-a-day-cycle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Running a day cycle
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#running-automation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Running automation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#post-processing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Post Processing
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Post Processing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#wrf2d" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        WRF2D
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wrf3d" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        WRF3D
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ocean2d" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ocean2D
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ocean3d" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ocean3D
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary-and-common-problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Summary and Common Problems
+      
+    </span>
+  </a>
   
 </li>
       
@@ -1110,7 +1620,7 @@
         <a href="../../" class="md-path__link">
           
   <span class="md-ellipsis">
-    INACAWO
+    InaCAWO
   </span>
 
         </a>
@@ -1167,11 +1677,20 @@
 </ul>
 </li>
 <li>
+<p><a href="#general-workflow">General Workflow</a></p>
+</li>
+<li>
+<p><a href="#configurations">Configurations</a></p>
+</li>
+<li>
 <p><a href="#dependencies">Dependencies</a></p>
 <ul>
 <li><a href="#conda-environment">Conda Environment</a></li>
 <li><a href="#liveocean">LiveOcean</a></li>
 </ul>
+</li>
+<li>
+<p><a href="#preparing-the-working-directory">Preparing The Working Directory</a></p>
 </li>
 <li>
 <p><a href="#global-reanalysis-data-acquisition">Global Reanalysis Data Acquisition</a></p>
@@ -1182,7 +1701,7 @@
 </ul>
 </li>
 <li>
-<p><a href="#preprocessing">Pre Processing</a></p>
+<p><a href="#pre-processing">Pre Processing</a></p>
 <ul>
 <li><a href="#wrf-forcing-files">WRF Forcing Files</a></li>
 <li><a href="#swan-forcing-files">SWAN Forcing Files</a></li>
@@ -1201,13 +1720,16 @@
 </ul>
 </li>
 <li>
-<p><a href="#postprocessing">Post Processing</a></p>
+<p><a href="#post-processing">Post Processing</a></p>
 <ul>
 <li><a href="#wrf2d">WRF2D</a></li>
 <li><a href="#wrf3d">WRF3D</a></li>
 <li><a href="#ocean2d">Ocean2D</a></li>
 <li><a href="#ocean3d">Ocean3D</a></li>
 </ul>
+</li>
+<li>
+<p><a href="#summary-and-common-problems">Summary and Common Problems</a></p>
 </li>
 </ul>
 </details>
@@ -1221,6 +1743,82 @@
 <p>In the forecast system, the velocities use zero-gradient boundary conditions, meaning the model does not ingest external information and simply extrapolates interior values to the boundary. This approach is acceptable for forecasts because each cycle spans only 10 days. However, in a long-term simulation the internal velocity fields will gradually drift away from realistic conditions. To address this, the hindcast uses radiation + nudging OBCs for the velocities.</p>
 <p>For long simulations, it is also recommended to apply a light nudging zone near the boundaries, consistent with the sponge-layer (Marchesiello et al., 2003). Accordingly, a climatology nudging was applied to the four grid points closest to each boundary. The nudging was applied to temperature, salinity, baroclinic and barotropic velocities, and sea surface height, all obtained from the Glorys Reanalysis.</p>
 <p>Additionally, the boundary conditions for SSH and barotropic velocities were updated to the Flather–Chapman combination, which is known to be very stable when used together with the OBC options noted above.</p>
+<h2 id="general-workflow">General Workflow<a class="headerlink" href="#general-workflow" title="Permanent link">&para;</a></h2>
+<pre class="mermaid"><code>flowchart TD
+
+A@{ shape: circle, label: "Start" } 
+--&gt; B{Check conda envs}
+B -- Not available --&gt; C[Install conda and create environment]
+C --&gt; B
+B -- Available --&gt; E[Download Global Data]
+
+subgraph PreProcessing
+    E --&gt; F@{ shape: lean-r, label: "Global data from ERA5 Atm, ERA5 Wave, and GLORYS Mercator Ocean" }
+    F --&gt; G[Generate Forcing Files]
+    G --&gt; H@{ shape: lean-r, label: "Forcing Files for WRF, SWAN, ROMS" }
+end
+
+subgraph MainProcessing
+    I{Running Hindcast}
+    I -- Running Day 1 --&gt; J[Compile COAWST with Ramp Tides] --&gt; K@{ shape: lean-r, label: "Binary CoawstM" }
+    I -- Running after Day 1 --&gt; L[Compile COAWST without Ramp Tides] --&gt; M@{ shape: lean-r, label: "Binary CoawstM"}
+
+    N@{ shape: lean-r, label: "Edited namelist files for WRF, SWAN, ROMS, and COAWST"}
+
+    O[Model integration]
+
+    K --&gt; P@{ shape: circle, label: "OR" } 
+    M --&gt; P@{ shape: circle, label: "OR" } 
+    P --&gt; O
+    N --&gt; O
+    H --&gt; O
+    O --&gt; Q@{ shape: lean-r, label: "Raw Output" }
+end
+
+subgraph PostProcessing
+    Q --&gt; R[PostProcessing]
+    R --&gt; S@{shape: lean-r, label: "Processed output"}
+end
+
+S --&gt; T@{shape: circle, label: "End"}
+
+PreProcessing --&gt; MainProcessing --&gt; PostProcessing</code></pre>
+<h2 id="configurations">Configurations<a class="headerlink" href="#configurations" title="Permanent link">&para;</a></h2>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:4"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Model - COAWST</label><label for="__tabbed_1_2">Domain and Resolution</label><label for="__tabbed_1_3">Static Input</label><label for="__tabbed_1_4">Dynamic Input</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<ul>
+<li>WRF </li>
+<li>ROMS</li>
+<li>SWAN</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<ul>
+<li>15S to 15N, 90E to 145E</li>
+<li>~3km</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<ul>
+<li>Land-Use/Land-Cover: Friedl and Sulla-Menashe (2015)</li>
+<li>Soils texture: Dy and Fung (2016)</li>
+<li>Terrain: GMTED2010</li>
+<li>Coastal boundaries: GSHHG (Wessel and Smith, 1996)</li>
+<li>Climatological River Discharge: Global Data Runoff Center or Global Annual River Discharge Dataset</li>
+<li>Bathymetry: GEBCO 2021 (~450m)</li>
+<li>Tides: TPXO (Egbert and Erofeeva, 2002)</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<ul>
+<li>Atmosphere (surface and pressure levels): ECMWF ERA5</li>
+<li>Ocean: Mercator reanalyses GLORYS12V2.1</li>
+<li>Waves: ECMWF ERA5 Waves</li>
+</ul>
+</div>
+</div>
+</div>
 <h2 id="dependencies">Dependencies<a class="headerlink" href="#dependencies" title="Permanent link">&para;</a></h2>
 <h3 id="conda-environment">Conda Environment<a class="headerlink" href="#conda-environment" title="Permanent link">&para;</a></h3>
 <p>Downloading, preprocessing, and postprocessing scripts are based on python tools. To ensure reproducibility of the processes, conda environments should be created and activated previously.</p>
@@ -1272,7 +1870,7 @@
 <li><code>copernicusmarine</code>: downloading MERCATOR/CMEMS data</li>
 <li><code>loenv</code>: preprocessing ROMS</li>
 </ol>
-<p>The modules required for each environment are stored in a <code>yaml</code> file, located in <code>/home/cawohdcst_ft2/yaml</code>. These <code>yaml</code> files can be used for creating the intended environment if you want play around in your own computer.</p>
+<p>The modules required for each environment are stored in a <code>yaml</code> file, located in <code>/home/cawohdcst_ft2/yml_files</code>. These <code>yaml</code> files can be used for creating the intended environment if you want play around in your own computer.</p>
 <details class="info">
 <summary>Checking conda environments</summary>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="o">(</span>base<span class="o">)</span><span class="w"> </span><span class="o">[</span>cawohdcst_ft2@mdclogin1<span class="w"> </span>~<span class="o">]</span>$<span class="w"> </span>conda<span class="w"> </span>env<span class="w"> </span>list
@@ -1292,6 +1890,100 @@
 </details>
 <h3 id="liveocean">LiveOcean<a class="headerlink" href="#liveocean" title="Permanent link">&para;</a></h3>
 <p><a href="https://github.com/parkermac/LO" target="_blank">LiveOcean(LO)</a> is used for ROMS preprocessing tool. It was customized by CLSBrasil team, so we will use the source code from <code>/scratch/cawohdcst_ft/home/cawohdcst/LO</code>. Luckily, you don't have to do that as it already exists in the <code>cawohdcst_ft2</code> home directory.</p>
+<details class="info">
+<summary>How to create LiveOcean environment?</summary>
+<p>In order to install this tool, we need to retrieve the source code, either from github or the one that exists in <code>cawohdcst_ft2</code> home directory. Inside the <code>LO</code> directory, there is a <code>yaml</code> file containing all modules necessary to run <code>lo_tools</code>. Hence, the way to go there is pretty simple, we only need to execute a well-known <code>conda</code> command to create environment from <code>yaml</code> file.
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>conda<span class="w"> </span>create<span class="w"> </span>-f<span class="w"> </span>loenv.yml
+</span></code></pre></div></p>
+</details>
+<h2 id="preparing-the-working-directory">Preparing The Working Directory<a class="headerlink" href="#preparing-the-working-directory" title="Permanent link">&para;</a></h2>
+<p>This hands-on assume that participants logged in to MDC Supercomputer via <code>cawohdcst_ft2</code> user account. Therefore, each user must define their own working directory. </p>
+<p>Please create directory in the <code>cawohdcst_ft2</code> home directory using an appropriate name of your choice (not too long and without space). All downloading, preprocessing (except the LO source code) and postprocessing scripts should be stored in this directory to avoid editing the same files across different participants.
+Additionally you also need to create directory in <code>/scratch</code> same as in <code>/home/cawohdcst_ft2</code> to store the data. </p>
+<h3 id="modifying-envsh">Modifying <code>env.sh</code><a class="headerlink" href="#modifying-envsh" title="Permanent link">&para;</a></h3>
+<p>It is mandatory setup our working environment using <code>env.sh</code>. Please copy the file from <code>/home/cawohdcst_ft2/hindcast_scripts/env.sh</code> to your working directory. Here is the sample.</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="o">[</span>cawohdcst_ft2@mdclogin1<span class="w"> </span>tyo<span class="o">]</span>$<span class="w"> </span><span class="nb">pwd</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>/home/cawohdcst_ft2/tyo
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="o">[</span>cawohdcst_ft2@mdclogin1<span class="w"> </span>tyo<span class="o">]</span>$<span class="w"> </span>cp<span class="w"> </span>/home/cawohdcst_ft2/hindcast_scripts/env.sh<span class="w"> </span>.
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="o">[</span>cawohdcst_ft2@mdclogin1<span class="w"> </span>tyo<span class="o">]</span>$
+</span></code></pre></div>
+<p>Edit the <code>CAWO_HINDCAST_BASE</code> in <code>env.sh</code> file as per your <code>scratch</code> directory.</p>
+<details class="info">
+<summary>Click here to view the full script</summary>
+<div class="language-bash highlight"><span class="filename">env.sh</span><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="ch">#!/bin/bash</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="c1"># </span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="c1"># Working directory</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="c1"># </span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="nb">export</span><span class="w"> </span><span class="nv">CAWO_HINDCAST_BASE</span><span class="o">=</span><span class="s1">&#39;/scratch/cawohdcst_ft2/tyo/cawo_hindcast&#39;</span>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="c1">#</span>
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="c1"># --------------------</span>
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="c1"># Global Data Download</span>
+</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="c1"># --------------------</span>
+</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="nb">export</span><span class="w"> </span><span class="nv">CAWO_INPUT</span><span class="o">=</span><span class="nv">$CAWO_HINDCAST_BASE</span><span class="s1">&#39;/cawo_input&#39;</span>
+</span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="c1"># --------------</span>
+</span><span id="__span-5-12"><a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a><span class="c1"># Preprocessing</span>
+</span><span id="__span-5-13"><a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a><span class="c1"># --------------</span>
+</span><span id="__span-5-14"><a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a><span class="nb">export</span><span class="w"> </span><span class="nv">WPS_DIR</span><span class="o">=</span><span class="s1">&#39;/scratch/cawohdcst_ft2/data/wps_run&#39;</span>
+</span><span id="__span-5-15"><a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a><span class="nb">export</span><span class="w"> </span><span class="nv">WPS_STATIC_DIR</span><span class="o">=</span><span class="s1">&#39;/scratch/cawohdcst_ft/data/static/wps/wps-4.3.1_static&#39;</span>
+</span><span id="__span-5-16"><a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a><span class="nb">export</span><span class="w"> </span><span class="nv">WRF_DIR</span><span class="o">=</span><span class="s1">&#39;/scratch/cawohdcst_ft/data/static/wrf&#39;</span>
+</span><span id="__span-5-17"><a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a><span class="nb">export</span><span class="w"> </span><span class="nv">WRF_STATIC_DIR</span><span class="o">=</span><span class="nv">$WRF_DIR</span><span class="s1">&#39;/wrf-4.3.1_static&#39;</span>
+</span><span id="__span-5-18"><a id="__codelineno-5-18" name="__codelineno-5-18" href="#__codelineno-5-18"></a><span class="nb">export</span><span class="w"> </span><span class="nv">WRF_STATIC_EXTRA_DIR</span><span class="o">=</span><span class="nv">$WRF_DIR</span><span class="s1">&#39;/extra_static&#39;</span>
+</span><span id="__span-5-19"><a id="__codelineno-5-19" name="__codelineno-5-19" href="#__codelineno-5-19"></a><span class="nb">export</span><span class="w"> </span><span class="nv">GEOGRID_FILE</span><span class="o">=</span><span class="s1">&#39;/scratch/cawohdcst_ft/data/wps_run/geogrid_v43/geo_em.d01.nc.ID03F3&#39;</span>
+</span><span id="__span-5-20"><a id="__codelineno-5-20" name="__codelineno-5-20" href="#__codelineno-5-20"></a><span class="nb">export</span><span class="w"> </span><span class="nv">GRID_DATA</span><span class="o">=</span><span class="s1">&#39;/scratch/cawohdcst_ft2/data/grids&#39;</span>
+</span><span id="__span-5-21"><a id="__codelineno-5-21" name="__codelineno-5-21" href="#__codelineno-5-21"></a><span class="nb">export</span><span class="w"> </span><span class="nv">ERA5_BASE_DIR</span><span class="o">=</span><span class="nv">$CAWO_INPUT</span><span class="s1">&#39;/era5&#39;</span>
+</span><span id="__span-5-22"><a id="__codelineno-5-22" name="__codelineno-5-22" href="#__codelineno-5-22"></a><span class="nb">export</span><span class="w"> </span><span class="nv">GLORYS_BASE_DIR</span><span class="o">=</span><span class="nv">$CAWO_INPUT</span><span class="s1">&#39;/mercator&#39;</span>
+</span><span id="__span-5-23"><a id="__codelineno-5-23" name="__codelineno-5-23" href="#__codelineno-5-23"></a><span class="nb">export</span><span class="w"> </span><span class="nv">ROMS_FORCING</span><span class="o">=</span><span class="s1">&#39;/scratch/cawohdcst_ft2/data/roms_forcing&#39;</span><span class="w"> </span><span class="c1"># tied to loenv, which defined at the conda env creation.</span>
+</span><span id="__span-5-24"><a id="__codelineno-5-24" name="__codelineno-5-24" href="#__codelineno-5-24"></a><span class="c1"># export ROMS_FORCING=$CAWO_INPUT&#39;/roms_forcing&#39; # ini bisa dipakai dengan mengubah Lfun dkk diimport dari utils instead dari installed lo_tools pada file driver_forcing3.py, tapi prosesnya tidak menghasilkan results.txt di LO_output, meski output data nc-ya tergenerate di folder yang didefine di line ini. </span>
+</span><span id="__span-5-25"><a id="__codelineno-5-25" name="__codelineno-5-25" href="#__codelineno-5-25"></a><span class="c1">#</span>
+</span><span id="__span-5-26"><a id="__codelineno-5-26" name="__codelineno-5-26" href="#__codelineno-5-26"></a><span class="c1"># LiveOcean</span>
+</span><span id="__span-5-27"><a id="__codelineno-5-27" name="__codelineno-5-27" href="#__codelineno-5-27"></a><span class="c1"># export LO_Output=$DATA_DIR&#39;/LO_output&#39;</span>
+</span><span id="__span-5-28"><a id="__codelineno-5-28" name="__codelineno-5-28" href="#__codelineno-5-28"></a><span class="c1"># export LO_User=$DATA_DIR&#39;/LO_output&#39;</span>
+</span><span id="__span-5-29"><a id="__codelineno-5-29" name="__codelineno-5-29" href="#__codelineno-5-29"></a><span class="c1">#</span>
+</span><span id="__span-5-30"><a id="__codelineno-5-30" name="__codelineno-5-30" href="#__codelineno-5-30"></a><span class="c1"># -----------------</span>
+</span><span id="__span-5-31"><a id="__codelineno-5-31" name="__codelineno-5-31" href="#__codelineno-5-31"></a><span class="c1"># Model integration</span>
+</span><span id="__span-5-32"><a id="__codelineno-5-32" name="__codelineno-5-32" href="#__codelineno-5-32"></a><span class="c1"># -----------------</span>
+</span><span id="__span-5-33"><a id="__codelineno-5-33" name="__codelineno-5-33" href="#__codelineno-5-33"></a><span class="nb">export</span><span class="w"> </span><span class="nv">CAWO_HINDCAST_RUN</span><span class="o">=</span><span class="nv">$CAWO_HINDCAST_BASE</span><span class="s1">&#39;/cawo_hindcast_run&#39;</span>
+</span><span id="__span-5-34"><a id="__codelineno-5-34" name="__codelineno-5-34" href="#__codelineno-5-34"></a><span class="c1"># --------------</span>
+</span><span id="__span-5-35"><a id="__codelineno-5-35" name="__codelineno-5-35" href="#__codelineno-5-35"></a><span class="c1"># Postprocessing</span>
+</span><span id="__span-5-36"><a id="__codelineno-5-36" name="__codelineno-5-36" href="#__codelineno-5-36"></a><span class="c1"># --------------</span>
+</span><span id="__span-5-37"><a id="__codelineno-5-37" name="__codelineno-5-37" href="#__codelineno-5-37"></a><span class="nb">export</span><span class="w"> </span><span class="nv">CAWO_OUTPUT</span><span class="o">=</span><span class="nv">$CAWO_HINDCAST_BASE</span><span class="s1">&#39;/cawo_output&#39;</span>
+</span></code></pre></div>
+</details>
+<p>Then <code>source</code> it.
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="nb">source</span><span class="w"> </span>env.sh
+</span></code></pre></div></p>
+<details class="info">
+<summary>Click here to see the sample structure of the working directory</summary>
+<div class="language-shell highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="o">[</span>cawohdcst_ft2@mdclogin1<span class="w"> </span>tyo<span class="o">]</span>$<span class="w"> </span><span class="nb">pwd</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>/home/cawohdcst_ft2/tyo
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="o">[</span>cawohdcst_ft2@mdclogin1<span class="w"> </span>tyo<span class="o">]</span>$<span class="w"> </span>tree
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>.
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>├──<span class="w"> </span>env.sh
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>├──<span class="w"> </span>mainprocess
+</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>├──<span class="w"> </span>postprocess
+</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>└──<span class="w"> </span>preprocess
+</span><span id="__span-7-9"><a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="w">    </span>├──<span class="w"> </span>get_era5
+</span><span id="__span-7-10"><a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a><span class="w">    </span>│<span class="w">   </span>├──<span class="w"> </span>get_era5_pl_automate.py
+</span><span id="__span-7-11"><a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a><span class="w">    </span>│<span class="w">   </span>├──<span class="w"> </span>get_era5_surface_automate.py
+</span><span id="__span-7-12"><a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a><span class="w">    </span>│<span class="w">   </span>└──<span class="w"> </span>get_era5_waves.py
+</span><span id="__span-7-13"><a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a><span class="w">    </span>├──<span class="w"> </span>get_glorys
+</span><span id="__span-7-14"><a id="__codelineno-7-14" name="__codelineno-7-14" href="#__codelineno-7-14"></a><span class="w">    </span>│<span class="w">   </span>├──<span class="w"> </span>get_glorys_reanalysis_interim.py
+</span><span id="__span-7-15"><a id="__codelineno-7-15" name="__codelineno-7-15" href="#__codelineno-7-15"></a><span class="w">    </span>│<span class="w">   </span>└──<span class="w"> </span>get_glorys_reanalysis.py
+</span><span id="__span-7-16"><a id="__codelineno-7-16" name="__codelineno-7-16" href="#__codelineno-7-16"></a><span class="w">    </span>├──<span class="w"> </span>get_swan_bry
+</span><span id="__span-7-17"><a id="__codelineno-7-17" name="__codelineno-7-17" href="#__codelineno-7-17"></a><span class="w">    </span>│<span class="w">   </span>├──<span class="w"> </span>make_swan_bc.py
+</span><span id="__span-7-18"><a id="__codelineno-7-18" name="__codelineno-7-18" href="#__codelineno-7-18"></a><span class="w">    </span>│<span class="w">   </span>└──<span class="w"> </span>slurm_make_swan_bc.bash
+</span><span id="__span-7-19"><a id="__codelineno-7-19" name="__codelineno-7-19" href="#__codelineno-7-19"></a><span class="w">    </span>└──<span class="w"> </span>wps_run
+</span><span id="__span-7-20"><a id="__codelineno-7-20" name="__codelineno-7-20" href="#__codelineno-7-20"></a><span class="w">        </span>├──<span class="w"> </span>slurm_run_metgrid.bash
+</span><span id="__span-7-21"><a id="__codelineno-7-21" name="__codelineno-7-21" href="#__codelineno-7-21"></a><span class="w">        </span>├──<span class="w"> </span>slurm_run_real.bash
+</span><span id="__span-7-22"><a id="__codelineno-7-22" name="__codelineno-7-22" href="#__codelineno-7-22"></a><span class="w">        </span>└──<span class="w"> </span>slurm_run_ungrib.bash
+</span><span id="__span-7-23"><a id="__codelineno-7-23" name="__codelineno-7-23" href="#__codelineno-7-23"></a>
+</span><span id="__span-7-24"><a id="__codelineno-7-24" name="__codelineno-7-24" href="#__codelineno-7-24"></a><span class="m">7</span><span class="w"> </span>directories,<span class="w"> </span><span class="m">11</span><span class="w"> </span>files
+</span><span id="__span-7-25"><a id="__codelineno-7-25" name="__codelineno-7-25" href="#__codelineno-7-25"></a><span class="o">[</span>cawohdcst_ft2@mdclogin1<span class="w"> </span>tyo<span class="o">]</span>$<span class="w"> </span>mkdir<span class="w"> </span>/scratch/cawohdcst_ft2/tyo/
+</span><span id="__span-7-26"><a id="__codelineno-7-26" name="__codelineno-7-26" href="#__codelineno-7-26"></a><span class="o">[</span>cawohdcst_ft2@mdclogin1<span class="w"> </span>tyo<span class="o">]</span>$<span class="w"> </span>/scratch/cawohdcst_ft2/tyo/
+</span><span id="__span-7-27"><a id="__codelineno-7-27" name="__codelineno-7-27" href="#__codelineno-7-27"></a>-sh:<span class="w"> </span>/scratch/cawohdcst_ft2/tyo/:<span class="w"> </span>Is<span class="w"> </span>a<span class="w"> </span>directory
+</span><span id="__span-7-28"><a id="__codelineno-7-28" name="__codelineno-7-28" href="#__codelineno-7-28"></a><span class="o">[</span>cawohdcst_ft2@mdclogin1<span class="w"> </span>tyo<span class="o">]</span>$<span class="w"> </span>
+</span></code></pre></div>
+</details>
 <h2 id="global-reanalysis-data-acquisition">Global Reanalysis Data Acquisition<a class="headerlink" href="#global-reanalysis-data-acquisition" title="Permanent link">&para;</a></h2>
 <p>To generate all the input files that are necessary to run the hindcast, global reanalysis data that are used as initial and boundary conditions need to be downloaded to cover the total period of simulation. This procedure doesn't need to be complete before the simulations start, but needs to be always ahead in time in respect from the simulation. </p>
 <p>The hindcast daily cycles start at 12h00 UTC each day. This is determined by the Glorys Reanalysis time which are daily means centered at 12h UTC. Thus, to facilitate the workflow for the generation of forcing files for each day, the global models data are also downloaded for each daily cycle starting at 12h00 UTC.</p>
@@ -1299,7 +1991,9 @@
 <p>The ECMWF ERA5 data can be downloaded using the ECMWF Climate Data Store API (CDSAPI). The <code>.cdsapirc</code> already configured in <code>cawohdcst_ft2</code> home directory, so you don't need to worry about this.</p>
 <details class="info">
 <summary>Click to see detailed parameters</summary>
-<h4 id="3d-data">3D Data<a class="headerlink" href="#3d-data" title="Permanent link">&para;</a></h4>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">3D Data</label><label for="__tabbed_2_2">2D Data</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <p>Pressure levels:
 1000, 950, 925, 900, 850, 800, 700, 600, 500, 400, 300, 250, 200, 150, 100, 70, 50, 30, 20, 10, 7, 5</p>
 <table>
@@ -1344,7 +2038,8 @@
 </tr>
 </tbody>
 </table>
-<h4 id="2d-data">2D Data<a class="headerlink" href="#2d-data" title="Permanent link">&para;</a></h4>
+</div>
+<div class="tabbed-block">
 <table>
 <thead>
 <tr>
@@ -1477,26 +2172,180 @@
 </tr>
 </tbody>
 </table>
+</div>
+</div>
+</div>
 </details>
 <p>The required variables from ERA5 are downloaded using the ECMWF CDS api and python sripts:</p>
 <ul>
-<li>3D data download script: <code>/home/cawohdcst_ft2/get_era5/get_era5_pl_automate.py</code></li>
-<li>2D data download script: <code>/home/cawohdcst_ft2/get_era5/get_era5_surface_automate.py</code></li>
+<li>3D data download script: <code>/home/cawohdcst_ft2/hindcast_scripts/preprocess/get_era5/get_era5_pl_automate.py</code></li>
+<li>2D data download script: <code>/home/cawohdcst_ft2/hindcast_scripts/preprocess/get_era5/get_era5_surface_automate.py</code></li>
 </ul>
-<p>Adjust the dates in both <code>*.py</code> files.</p>
-<figure id="fig1">
-    <img alt="&quot;Adjusting the dates&quot;" src="../../img/era5-atm.png" />
-    <figcaption>Figure 1. Adjusting the dates.</figcaption>
-</figure>
-<p>The outputs are placed on daily folders following the pattern: <code>/scratch/&lt;your_user_name&gt;/data/era5/era5_YYYYMMDD</code>, or in this case our username is <code>cawohdcst_ft2</code>.</p>
+<p>Now, copy these files to your working directory. 
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="o">[</span>cawohdcst_ft2@mdclogin1<span class="w"> </span>preprocess<span class="o">]</span>$<span class="w"> </span><span class="nb">pwd</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>/home/cawohdcst_ft2/tyo/preprocess
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="o">[</span>cawohdcst_ft2@mdclogin1<span class="w"> </span>preprocess<span class="o">]</span>$<span class="w"> </span>cp<span class="w"> </span>-r<span class="w"> </span>/home/cawohdcst_ft2/hindcast_scripts/preprocess/get_era5
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="o">[</span>cawohdcst_ft2@mdclogin1<span class="w"> </span>preprocess<span class="o">]</span>$<span class="w"> </span>ls<span class="w"> </span>get_era5/<span class="w"> </span>-l
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>total<span class="w"> </span><span class="m">12</span>
+</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>-rwxr-xr-x.<span class="w"> </span><span class="m">1</span><span class="w"> </span>cawohdcst_ft2<span class="w"> </span>cls_ext<span class="w"> </span><span class="m">2697</span><span class="w"> </span>Jan<span class="w"> </span><span class="m">23</span><span class="w"> </span><span class="m">07</span>:41<span class="w"> </span>get_era5_pl_automate.py
+</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>-rwxr-xr-x.<span class="w"> </span><span class="m">1</span><span class="w"> </span>cawohdcst_ft2<span class="w"> </span>cls_ext<span class="w"> </span><span class="m">2907</span><span class="w"> </span>Jan<span class="w"> </span><span class="m">23</span><span class="w"> </span><span class="m">07</span>:41<span class="w"> </span>get_era5_surface_automate.py
+</span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>-rwxr-xr-x.<span class="w"> </span><span class="m">1</span><span class="w"> </span>cawohdcst_ft2<span class="w"> </span>cls_ext<span class="w"> </span><span class="m">2476</span><span class="w"> </span>Jan<span class="w"> </span><span class="m">23</span><span class="w"> </span><span class="m">07</span>:41<span class="w"> </span>get_era5_waves.py
+</span><span id="__span-8-9"><a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a><span class="o">[</span>cawohdcst_ft2@mdclogin1<span class="w"> </span>preprocess<span class="o">]</span>$<span class="w"> </span>
+</span></code></pre></div></p>
+<p>Adjust the dates (lines 6 &amp; 7) and <code>folder_name</code> (line 40) in both <code>*.py</code> files.</p>
+<p><a id="get-era5-pl-script"></a>
+<div class="language-py highlight"><span class="filename">get_era5_pl_automate.py</span><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="o">...</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="o">...</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="mi">5</span> <span class="c1"># Define the range of dates to process</span>
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="hll"><span class="mi">6</span> <span class="n">start_date</span> <span class="o">=</span> <span class="n">datetime</span><span class="p">(</span><span class="mi">1995</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="c1"># Adjust this</span>
+</span></span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="hll"><span class="mi">7</span> <span class="n">end_date</span> <span class="o">=</span> <span class="n">datetime</span><span class="p">(</span><span class="mi">1995</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>  <span class="c1"># Adjust this, example: 2 days; adjust as needed</span>
+</span></span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="o">...</span>
+</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="o">...</span>
+</span><span id="__span-9-8"><a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a><span class="mi">28</span> <span class="n">current_date</span> <span class="o">=</span> <span class="n">start_date</span>
+</span><span id="__span-9-9"><a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a><span class="mi">29</span> <span class="k">while</span> <span class="n">current_date</span> <span class="o">&lt;=</span> <span class="n">end_date</span><span class="p">:</span>
+</span><span id="__span-9-10"><a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a><span class="o">...</span>
+</span><span id="__span-9-11"><a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a><span class="o">...</span>
+</span><span id="__span-9-12"><a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a><span class="mi">39</span>     <span class="c1"># Create output directory</span>
+</span><span id="__span-9-13"><a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a><span class="mi">40</span>     <span class="n">folder_name</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;/scratch/cawohdcst_ft2/tyo/data/era5/era5_</span><span class="si">{</span><span class="n">current_date</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;%Y%m</span><span class="si">%d</span><span class="s1">&#39;</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span>
+</span><span id="__span-9-14"><a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a><span class="mi">41</span>     <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">folder_name</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span><span id="__span-9-15"><a id="__codelineno-9-15" name="__codelineno-9-15" href="#__codelineno-9-15"></a><span class="mi">42</span> 
+</span><span id="__span-9-16"><a id="__codelineno-9-16" name="__codelineno-9-16" href="#__codelineno-9-16"></a><span class="o">...</span>
+</span><span id="__span-9-17"><a id="__codelineno-9-17" name="__codelineno-9-17" href="#__codelineno-9-17"></a><span class="o">...</span>
+</span></code></pre></div></p>
 <p>The <code>*.grib</code> files are from the day represented in the folder names starting at 12h00 UTC until the next day 12h00 UTC.</p>
-<details class="info">
-<summary>If the process completes successfully ...</summary>
-<p>If the process completes successfully, your terminal should look similar to the image below. In this example, the terminal shows the output of <code>get_era5_surface_automate.py</code>. However, even if you are running <code>get_era5_pl_automate.py</code>, the terminal output should be very similar.</p>
-<p><figure markdown="span">
-    <img alt="&quot;ERA5 ATM output&quot;" src="../../img/era5-atm-out.png" />
-    <figcaption>Figure 2. ERA5 ATM output.</figcaption>
-</figure></p>
+<details class="success">
+<summary>Click here to view the execution log.</summary>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">3D Data</label><label for="__tabbed_3_2">2D Data</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-text highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>2026-01-23 04:34:56,410 INFO Request ID is 40f2233a-4641-4f97-b6e1-5d9dd765e82c
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>2026-01-23 04:34:56,588 INFO status has been updated to accepted
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>2026-01-23 04:35:10,769 INFO status has been updated to running
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>2026-01-23 04:36:51,885 INFO status has been updated to successful
+</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>Downloading /scratch/cawohdcst_ft2/tyo/data/era5/era5_19950104/part2.grib
+</span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>2026-01-23 04:37:06,470 INFO Request ID is a36f93bf-e1ea-4de4-83f9-d6f327e81dba
+</span><span id="__span-10-7"><a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a>2026-01-23 04:37:06,743 INFO status has been updated to accepted
+</span><span id="__span-10-8"><a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a>2026-01-23 04:37:15,596 INFO status has been updated to running
+</span><span id="__span-10-9"><a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a>2026-01-23 04:39:02,081 INFO status has been updated to successful
+</span><span id="__span-10-10"><a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a>Downloading /scratch/cawohdcst_ft2/tyo/data/era5/era5_19950105/part1.grib
+</span><span id="__span-10-11"><a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a>{&#39;area&#39;: [15.5, 89.5, -15.5, 145.5],
+</span><span id="__span-10-12"><a id="__codelineno-10-12" name="__codelineno-10-12" href="#__codelineno-10-12"></a>&#39;data_format&#39;: &#39;grib&#39;,
+</span><span id="__span-10-13"><a id="__codelineno-10-13" name="__codelineno-10-13" href="#__codelineno-10-13"></a>&#39;day&#39;: &#39;05&#39;,
+</span><span id="__span-10-14"><a id="__codelineno-10-14" name="__codelineno-10-14" href="#__codelineno-10-14"></a>&#39;month&#39;: &#39;01&#39;,
+</span><span id="__span-10-15"><a id="__codelineno-10-15" name="__codelineno-10-15" href="#__codelineno-10-15"></a>&#39;pressure_level&#39;: [&#39;5&#39;,
+</span><span id="__span-10-16"><a id="__codelineno-10-16" name="__codelineno-10-16" href="#__codelineno-10-16"></a>                    &#39;7&#39;,
+</span><span id="__span-10-17"><a id="__codelineno-10-17" name="__codelineno-10-17" href="#__codelineno-10-17"></a>                    &#39;10&#39;,
+</span><span id="__span-10-18"><a id="__codelineno-10-18" name="__codelineno-10-18" href="#__codelineno-10-18"></a>                    &#39;20&#39;,
+</span><span id="__span-10-19"><a id="__codelineno-10-19" name="__codelineno-10-19" href="#__codelineno-10-19"></a>                    &#39;30&#39;,
+</span><span id="__span-10-20"><a id="__codelineno-10-20" name="__codelineno-10-20" href="#__codelineno-10-20"></a>                    &#39;50&#39;,
+</span><span id="__span-10-21"><a id="__codelineno-10-21" name="__codelineno-10-21" href="#__codelineno-10-21"></a>                    &#39;70&#39;,
+</span><span id="__span-10-22"><a id="__codelineno-10-22" name="__codelineno-10-22" href="#__codelineno-10-22"></a>                    &#39;100&#39;,
+</span><span id="__span-10-23"><a id="__codelineno-10-23" name="__codelineno-10-23" href="#__codelineno-10-23"></a>                    &#39;150&#39;,
+</span><span id="__span-10-24"><a id="__codelineno-10-24" name="__codelineno-10-24" href="#__codelineno-10-24"></a>                    &#39;200&#39;,
+</span><span id="__span-10-25"><a id="__codelineno-10-25" name="__codelineno-10-25" href="#__codelineno-10-25"></a>                    &#39;250&#39;,
+</span><span id="__span-10-26"><a id="__codelineno-10-26" name="__codelineno-10-26" href="#__codelineno-10-26"></a>                    &#39;300&#39;,
+</span><span id="__span-10-27"><a id="__codelineno-10-27" name="__codelineno-10-27" href="#__codelineno-10-27"></a>                    &#39;400&#39;,
+</span><span id="__span-10-28"><a id="__codelineno-10-28" name="__codelineno-10-28" href="#__codelineno-10-28"></a>                    &#39;500&#39;,
+</span><span id="__span-10-29"><a id="__codelineno-10-29" name="__codelineno-10-29" href="#__codelineno-10-29"></a>                    &#39;600&#39;,
+</span><span id="__span-10-30"><a id="__codelineno-10-30" name="__codelineno-10-30" href="#__codelineno-10-30"></a>                    &#39;700&#39;,
+</span><span id="__span-10-31"><a id="__codelineno-10-31" name="__codelineno-10-31" href="#__codelineno-10-31"></a>                    &#39;800&#39;,
+</span><span id="__span-10-32"><a id="__codelineno-10-32" name="__codelineno-10-32" href="#__codelineno-10-32"></a>                    &#39;850&#39;,
+</span><span id="__span-10-33"><a id="__codelineno-10-33" name="__codelineno-10-33" href="#__codelineno-10-33"></a>                    &#39;900&#39;,
+</span><span id="__span-10-34"><a id="__codelineno-10-34" name="__codelineno-10-34" href="#__codelineno-10-34"></a>                    &#39;925&#39;,
+</span><span id="__span-10-35"><a id="__codelineno-10-35" name="__codelineno-10-35" href="#__codelineno-10-35"></a>                    &#39;950&#39;,
+</span><span id="__span-10-36"><a id="__codelineno-10-36" name="__codelineno-10-36" href="#__codelineno-10-36"></a>                    &#39;1000&#39;],
+</span><span id="__span-10-37"><a id="__codelineno-10-37" name="__codelineno-10-37" href="#__codelineno-10-37"></a>&#39;product_type&#39;: &#39;reanalysis&#39;,
+</span><span id="__span-10-38"><a id="__codelineno-10-38" name="__codelineno-10-38" href="#__codelineno-10-38"></a>&#39;time&#39;: [&#39;12:00&#39;,
+</span><span id="__span-10-39"><a id="__codelineno-10-39" name="__codelineno-10-39" href="#__codelineno-10-39"></a>        &#39;13:00&#39;,
+</span><span id="__span-10-40"><a id="__codelineno-10-40" name="__codelineno-10-40" href="#__codelineno-10-40"></a>        &#39;14:00&#39;,
+</span><span id="__span-10-41"><a id="__codelineno-10-41" name="__codelineno-10-41" href="#__codelineno-10-41"></a>        &#39;15:00&#39;,
+</span><span id="__span-10-42"><a id="__codelineno-10-42" name="__codelineno-10-42" href="#__codelineno-10-42"></a>        &#39;16:00&#39;,
+</span><span id="__span-10-43"><a id="__codelineno-10-43" name="__codelineno-10-43" href="#__codelineno-10-43"></a>        &#39;17:00&#39;,
+</span><span id="__span-10-44"><a id="__codelineno-10-44" name="__codelineno-10-44" href="#__codelineno-10-44"></a>        &#39;18:00&#39;,
+</span><span id="__span-10-45"><a id="__codelineno-10-45" name="__codelineno-10-45" href="#__codelineno-10-45"></a>        &#39;19:00&#39;,
+</span><span id="__span-10-46"><a id="__codelineno-10-46" name="__codelineno-10-46" href="#__codelineno-10-46"></a>        &#39;20:00&#39;,
+</span><span id="__span-10-47"><a id="__codelineno-10-47" name="__codelineno-10-47" href="#__codelineno-10-47"></a>        &#39;21:00&#39;,
+</span><span id="__span-10-48"><a id="__codelineno-10-48" name="__codelineno-10-48" href="#__codelineno-10-48"></a>        &#39;22:00&#39;,
+</span><span id="__span-10-49"><a id="__codelineno-10-49" name="__codelineno-10-49" href="#__codelineno-10-49"></a>        &#39;23:00&#39;],
+</span><span id="__span-10-50"><a id="__codelineno-10-50" name="__codelineno-10-50" href="#__codelineno-10-50"></a>&#39;variable&#39;: [&#39;geopotential&#39;,
+</span><span id="__span-10-51"><a id="__codelineno-10-51" name="__codelineno-10-51" href="#__codelineno-10-51"></a>            &#39;relative_humidity&#39;,
+</span><span id="__span-10-52"><a id="__codelineno-10-52" name="__codelineno-10-52" href="#__codelineno-10-52"></a>            &#39;temperature&#39;,
+</span><span id="__span-10-53"><a id="__codelineno-10-53" name="__codelineno-10-53" href="#__codelineno-10-53"></a>            &#39;u_component_of_wind&#39;,
+</span><span id="__span-10-54"><a id="__codelineno-10-54" name="__codelineno-10-54" href="#__codelineno-10-54"></a>            &#39;v_component_of_wind&#39;],
+</span><span id="__span-10-55"><a id="__codelineno-10-55" name="__codelineno-10-55" href="#__codelineno-10-55"></a>&#39;year&#39;: &#39;1995&#39;}
+</span><span id="__span-10-56"><a id="__codelineno-10-56" name="__codelineno-10-56" href="#__codelineno-10-56"></a>2026-01-23 04:39:29,148 INFO Request ID is b157c67d-319a-48a2-aaf6-af1fa1bcde60
+</span><span id="__span-10-57"><a id="__codelineno-10-57" name="__codelineno-10-57" href="#__codelineno-10-57"></a>2026-01-23 04:39:29,343 INFO status has been updated to accepted
+</span><span id="__span-10-58"><a id="__codelineno-10-58" name="__codelineno-10-58" href="#__codelineno-10-58"></a>2026-01-23 04:39:43,444 INFO status has been updated to running
+</span><span id="__span-10-59"><a id="__codelineno-10-59" name="__codelineno-10-59" href="#__codelineno-10-59"></a>2026-01-23 04:41:26,402 INFO status has been updated to successful
+</span><span id="__span-10-60"><a id="__codelineno-10-60" name="__codelineno-10-60" href="#__codelineno-10-60"></a>Downloading /scratch/cawohdcst_ft2/tyo/data/era5/era5_19950105/part2.grib
+</span><span id="__span-10-61"><a id="__codelineno-10-61" name="__codelineno-10-61" href="#__codelineno-10-61"></a>2026-01-23 04:41:58,035 INFO Request ID is 3100a36b-00a4-448b-92f1-7cc208000079
+</span><span id="__span-10-62"><a id="__codelineno-10-62" name="__codelineno-10-62" href="#__codelineno-10-62"></a>2026-01-23 04:41:59,125 INFO status has been updated to accepted
+</span><span id="__span-10-63"><a id="__codelineno-10-63" name="__codelineno-10-63" href="#__codelineno-10-63"></a>2026-01-23 04:42:08,322 INFO status has been updated to running
+</span><span id="__span-10-64"><a id="__codelineno-10-64" name="__codelineno-10-64" href="#__codelineno-10-64"></a>2026-01-23 04:43:54,771 INFO status has been updated to successful
+</span><span id="__span-10-65"><a id="__codelineno-10-65" name="__codelineno-10-65" href="#__codelineno-10-65"></a>(cdsapi) sh-4.4$ 
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-text highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>2026-01-23 04:32:24,221 INFO [2025-12-11T00:00:00] Please note that a dedicated catalogue entry for this dataset, post-processed and stored in Analysis Ready Cloud Optimized (ARCO) format (Zarr), is available for optimised time-series retrievals (i.e. for retrieving data from selected variables for a single point over an extended period of time in an efficient way). You can discover it [here](https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels-timeseries?tab=overview)
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>2026-01-23 04:32:24,222 INFO Request ID is 13419524-b9d9-44e3-9f26-c285af4b614d
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>2026-01-23 04:32:24,435 INFO status has been updated to accepted
+</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>2026-01-23 04:34:19,878 INFO status has been updated to running
+</span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>2026-01-23 04:35:18,519 INFO status has been updated to successful
+</span><span id="__span-11-6"><a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a>Downloading /scratch/cawohdcst_ft2/tyo/data/era5/era5_19950105/part1.grib
+</span><span id="__span-11-7"><a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a>{&#39;area&#39;: [15.5, 89.5, -15.5, 145.5],
+</span><span id="__span-11-8"><a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a>&#39;data_format&#39;: &#39;grib&#39;,
+</span><span id="__span-11-9"><a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a>&#39;day&#39;: &#39;05&#39;,
+</span><span id="__span-11-10"><a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a>&#39;month&#39;: &#39;01&#39;,
+</span><span id="__span-11-11"><a id="__codelineno-11-11" name="__codelineno-11-11" href="#__codelineno-11-11"></a>&#39;product_type&#39;: &#39;reanalysis&#39;,
+</span><span id="__span-11-12"><a id="__codelineno-11-12" name="__codelineno-11-12" href="#__codelineno-11-12"></a>&#39;time&#39;: [&#39;12:00&#39;,
+</span><span id="__span-11-13"><a id="__codelineno-11-13" name="__codelineno-11-13" href="#__codelineno-11-13"></a>        &#39;13:00&#39;,
+</span><span id="__span-11-14"><a id="__codelineno-11-14" name="__codelineno-11-14" href="#__codelineno-11-14"></a>        &#39;14:00&#39;,
+</span><span id="__span-11-15"><a id="__codelineno-11-15" name="__codelineno-11-15" href="#__codelineno-11-15"></a>        &#39;15:00&#39;,
+</span><span id="__span-11-16"><a id="__codelineno-11-16" name="__codelineno-11-16" href="#__codelineno-11-16"></a>        &#39;16:00&#39;,
+</span><span id="__span-11-17"><a id="__codelineno-11-17" name="__codelineno-11-17" href="#__codelineno-11-17"></a>        &#39;17:00&#39;,
+</span><span id="__span-11-18"><a id="__codelineno-11-18" name="__codelineno-11-18" href="#__codelineno-11-18"></a>        &#39;18:00&#39;,
+</span><span id="__span-11-19"><a id="__codelineno-11-19" name="__codelineno-11-19" href="#__codelineno-11-19"></a>        &#39;19:00&#39;,
+</span><span id="__span-11-20"><a id="__codelineno-11-20" name="__codelineno-11-20" href="#__codelineno-11-20"></a>        &#39;20:00&#39;,
+</span><span id="__span-11-21"><a id="__codelineno-11-21" name="__codelineno-11-21" href="#__codelineno-11-21"></a>        &#39;21:00&#39;,
+</span><span id="__span-11-22"><a id="__codelineno-11-22" name="__codelineno-11-22" href="#__codelineno-11-22"></a>        &#39;22:00&#39;,
+</span><span id="__span-11-23"><a id="__codelineno-11-23" name="__codelineno-11-23" href="#__codelineno-11-23"></a>        &#39;23:00&#39;],
+</span><span id="__span-11-24"><a id="__codelineno-11-24" name="__codelineno-11-24" href="#__codelineno-11-24"></a>&#39;variable&#39;: [&#39;10m_u_component_of_wind&#39;,
+</span><span id="__span-11-25"><a id="__codelineno-11-25" name="__codelineno-11-25" href="#__codelineno-11-25"></a>            &#39;10m_v_component_of_wind&#39;,
+</span><span id="__span-11-26"><a id="__codelineno-11-26" name="__codelineno-11-26" href="#__codelineno-11-26"></a>            &#39;2m_dewpoint_temperature&#39;,
+</span><span id="__span-11-27"><a id="__codelineno-11-27" name="__codelineno-11-27" href="#__codelineno-11-27"></a>            &#39;2m_temperature&#39;,
+</span><span id="__span-11-28"><a id="__codelineno-11-28" name="__codelineno-11-28" href="#__codelineno-11-28"></a>            &#39;mean_sea_level_pressure&#39;,
+</span><span id="__span-11-29"><a id="__codelineno-11-29" name="__codelineno-11-29" href="#__codelineno-11-29"></a>            &#39;sea_surface_temperature&#39;,
+</span><span id="__span-11-30"><a id="__codelineno-11-30" name="__codelineno-11-30" href="#__codelineno-11-30"></a>            &#39;surface_pressure&#39;,
+</span><span id="__span-11-31"><a id="__codelineno-11-31" name="__codelineno-11-31" href="#__codelineno-11-31"></a>            &#39;skin_temperature&#39;,
+</span><span id="__span-11-32"><a id="__codelineno-11-32" name="__codelineno-11-32" href="#__codelineno-11-32"></a>            &#39;snow_density&#39;,
+</span><span id="__span-11-33"><a id="__codelineno-11-33" name="__codelineno-11-33" href="#__codelineno-11-33"></a>            &#39;snow_depth&#39;,
+</span><span id="__span-11-34"><a id="__codelineno-11-34" name="__codelineno-11-34" href="#__codelineno-11-34"></a>            &#39;soil_temperature_level_1&#39;,
+</span><span id="__span-11-35"><a id="__codelineno-11-35" name="__codelineno-11-35" href="#__codelineno-11-35"></a>            &#39;soil_temperature_level_2&#39;,
+</span><span id="__span-11-36"><a id="__codelineno-11-36" name="__codelineno-11-36" href="#__codelineno-11-36"></a>            &#39;soil_temperature_level_3&#39;,
+</span><span id="__span-11-37"><a id="__codelineno-11-37" name="__codelineno-11-37" href="#__codelineno-11-37"></a>            &#39;soil_temperature_level_4&#39;,
+</span><span id="__span-11-38"><a id="__codelineno-11-38" name="__codelineno-11-38" href="#__codelineno-11-38"></a>            &#39;volumetric_soil_water_layer_1&#39;,
+</span><span id="__span-11-39"><a id="__codelineno-11-39" name="__codelineno-11-39" href="#__codelineno-11-39"></a>            &#39;volumetric_soil_water_layer_2&#39;,
+</span><span id="__span-11-40"><a id="__codelineno-11-40" name="__codelineno-11-40" href="#__codelineno-11-40"></a>            &#39;volumetric_soil_water_layer_3&#39;,
+</span><span id="__span-11-41"><a id="__codelineno-11-41" name="__codelineno-11-41" href="#__codelineno-11-41"></a>            &#39;volumetric_soil_water_layer_4&#39;,
+</span><span id="__span-11-42"><a id="__codelineno-11-42" name="__codelineno-11-42" href="#__codelineno-11-42"></a>            &#39;land_sea_mask&#39;,
+</span><span id="__span-11-43"><a id="__codelineno-11-43" name="__codelineno-11-43" href="#__codelineno-11-43"></a>            &#39;sea_ice_cover&#39;],
+</span><span id="__span-11-44"><a id="__codelineno-11-44" name="__codelineno-11-44" href="#__codelineno-11-44"></a>&#39;year&#39;: &#39;1995&#39;}
+</span><span id="__span-11-45"><a id="__codelineno-11-45" name="__codelineno-11-45" href="#__codelineno-11-45"></a>2026-01-23 04:35:27,043 INFO [2025-12-11T00:00:00] Please note that a dedicated catalogue entry for this dataset, post-processed and stored in Analysis Ready Cloud Optimized (ARCO) format (Zarr), is available for optimised time-series retrievals (i.e. for retrieving data from selected variables for a single point over an extended period of time in an efficient way). You can discover it [here](https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels-timeseries?tab=overview)
+</span><span id="__span-11-46"><a id="__codelineno-11-46" name="__codelineno-11-46" href="#__codelineno-11-46"></a>2026-01-23 04:35:27,043 INFO Request ID is cd9fb5f3-f0f3-4250-bf0f-b5bd34000543
+</span><span id="__span-11-47"><a id="__codelineno-11-47" name="__codelineno-11-47" href="#__codelineno-11-47"></a>2026-01-23 04:35:27,242 INFO status has been updated to accepted
+</span><span id="__span-11-48"><a id="__codelineno-11-48" name="__codelineno-11-48" href="#__codelineno-11-48"></a>2026-01-23 04:36:43,896 INFO status has been updated to running
+</span><span id="__span-11-49"><a id="__codelineno-11-49" name="__codelineno-11-49" href="#__codelineno-11-49"></a>2026-01-23 04:37:24,808 INFO status has been updated to successful
+</span><span id="__span-11-50"><a id="__codelineno-11-50" name="__codelineno-11-50" href="#__codelineno-11-50"></a>Downloading /scratch/cawohdcst_ft2/tyo/data/era5/era5_19950105/part2.grib
+</span><span id="__span-11-51"><a id="__codelineno-11-51" name="__codelineno-11-51" href="#__codelineno-11-51"></a>2026-01-23 04:37:31,744 INFO [2025-12-11T00:00:00] Please note that a dedicated catalogue entry for this dataset, post-processed and stored in Analysis Ready Cloud Optimized (ARCO) format (Zarr), is available for optimised time-series retrievals (i.e. for retrieving data from selected variables for a single point over an extended period of time in an efficient way). You can discover it [here](https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels-timeseries?tab=overview)
+</span><span id="__span-11-52"><a id="__codelineno-11-52" name="__codelineno-11-52" href="#__codelineno-11-52"></a>2026-01-23 04:37:31,744 INFO Request ID is 6b0e3600-79b6-48aa-9f7f-f4bad9f0e8b9
+</span><span id="__span-11-53"><a id="__codelineno-11-53" name="__codelineno-11-53" href="#__codelineno-11-53"></a>2026-01-23 04:37:31,929 INFO status has been updated to accepted
+</span><span id="__span-11-54"><a id="__codelineno-11-54" name="__codelineno-11-54" href="#__codelineno-11-54"></a>2026-01-23 04:38:48,581 INFO status has been updated to running
+</span><span id="__span-11-55"><a id="__codelineno-11-55" name="__codelineno-11-55" href="#__codelineno-11-55"></a>2026-01-23 04:39:27,245 INFO status has been updated to successful
+</span><span id="__span-11-56"><a id="__codelineno-11-56" name="__codelineno-11-56" href="#__codelineno-11-56"></a>(cdsapi) [cawohdcst_ft2@mdclogin1 preprocess]$
+</span></code></pre></div>
+</div>
+</div>
+</div>
 </details>
 <h3 id="era5-waves-data">ERA5 Waves Data<a class="headerlink" href="#era5-waves-data" title="Permanent link">&para;</a></h3>
 <p>From the ERA5, the following variables are used as SWAN boundary conditions and need to be downloaded:</p>
@@ -1505,10 +2354,52 @@
 <li><code>mean_wave_period</code>;</li>
 <li><code>mean_wave_direction</code>;</li>
 </ul>
-<p>The data from ERA5 are downloaded using the ECMWF CDS api and python script. The script is located in <code>/home/cawohdcst_ft2/get_era5/get_era5_waves.py</code>.</p>
-<p>Similar with the previous script (<a href="#fig1">Figure 1</a>), adjust the dates by replacing the value of variables <code>start_date</code> and <code>end_date</code> to specify the downloading period. </p>
-<p>The outputs are placed on daily folders following the pattern: <code>/scratch/&lt;your_user_name&gt;/data/era5_waves/era5_YYYYMMDD</code>, or in this case our username is <code>cawohdcst_ft2</code>. </p>
+<p>The data from ERA5 are downloaded using the ECMWF CDS api and python script. The script is located in <code>/home/cawohdcst_ft2/hindcast_scripts/preprocess/get_era5/get_era5_waves.py</code>. It should already placed in your working directory as we perform recursive copy in the ERA5 Atmosphere.</p>
+<p>Similar with the previous script (<a href="#get-era5-pl-script">Code block 1</a>), adjust the dates by replacing the value of variables <code>start_date</code> and <code>end_date</code> to specify the downloading period, as well as the <code>folder_name</code>. </p>
 <p>The <code>*.grib</code> files are from the day represented in the folder names starting at 12h00 UTC until the next day 12h00 UTC.</p>
+<details class="success">
+<summary>Click here to view the execution log.</summary>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>2026-01-23 04:37:29,540 INFO [2025-12-11T00:00:00] Please note that a dedicated catalogue entry for this dataset, post-processed and stored in Analysis Ready Cloud Optimized (ARCO) format (Zarr), is available for optimised time-series retrievals (i.e. for retrieving data from selected variables for a single point over an extended period of time in an efficient way). You can discover it [here](https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels-timeseries?tab=overview)
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>2026-01-23 04:37:29,541 INFO Request ID is 99f6fc34-1490-42d8-b873-00b15a9ddfed
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>2026-01-23 04:37:29,726 INFO status has been updated to accepted
+</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>2026-01-23 04:38:46,438 INFO status has been updated to successful
+</span><span id="__span-12-5"><a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>Downloading /scratch/cawohdcst_ft2/tyo/data/era5_waves/era5_19950105/part1.grib
+</span><span id="__span-12-6"><a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a>{&#39;area&#39;: [15.5, 89.5, -15.5, 145.5],
+</span><span id="__span-12-7"><a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a>&#39;data_format&#39;: &#39;grib&#39;,
+</span><span id="__span-12-8"><a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a>&#39;day&#39;: &#39;05&#39;,
+</span><span id="__span-12-9"><a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a>&#39;month&#39;: &#39;01&#39;,
+</span><span id="__span-12-10"><a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a>&#39;product_type&#39;: &#39;reanalysis&#39;,
+</span><span id="__span-12-11"><a id="__codelineno-12-11" name="__codelineno-12-11" href="#__codelineno-12-11"></a>&#39;time&#39;: [&#39;12:00&#39;,
+</span><span id="__span-12-12"><a id="__codelineno-12-12" name="__codelineno-12-12" href="#__codelineno-12-12"></a>        &#39;13:00&#39;,
+</span><span id="__span-12-13"><a id="__codelineno-12-13" name="__codelineno-12-13" href="#__codelineno-12-13"></a>        &#39;14:00&#39;,
+</span><span id="__span-12-14"><a id="__codelineno-12-14" name="__codelineno-12-14" href="#__codelineno-12-14"></a>        &#39;15:00&#39;,
+</span><span id="__span-12-15"><a id="__codelineno-12-15" name="__codelineno-12-15" href="#__codelineno-12-15"></a>        &#39;16:00&#39;,
+</span><span id="__span-12-16"><a id="__codelineno-12-16" name="__codelineno-12-16" href="#__codelineno-12-16"></a>        &#39;17:00&#39;,
+</span><span id="__span-12-17"><a id="__codelineno-12-17" name="__codelineno-12-17" href="#__codelineno-12-17"></a>        &#39;18:00&#39;,
+</span><span id="__span-12-18"><a id="__codelineno-12-18" name="__codelineno-12-18" href="#__codelineno-12-18"></a>        &#39;19:00&#39;,
+</span><span id="__span-12-19"><a id="__codelineno-12-19" name="__codelineno-12-19" href="#__codelineno-12-19"></a>        &#39;20:00&#39;,
+</span><span id="__span-12-20"><a id="__codelineno-12-20" name="__codelineno-12-20" href="#__codelineno-12-20"></a>        &#39;21:00&#39;,
+</span><span id="__span-12-21"><a id="__codelineno-12-21" name="__codelineno-12-21" href="#__codelineno-12-21"></a>        &#39;22:00&#39;,
+</span><span id="__span-12-22"><a id="__codelineno-12-22" name="__codelineno-12-22" href="#__codelineno-12-22"></a>        &#39;23:00&#39;],
+</span><span id="__span-12-23"><a id="__codelineno-12-23" name="__codelineno-12-23" href="#__codelineno-12-23"></a>&#39;variable&#39;: [&#39;significant_height_of_combined_wind_waves_and_swell&#39;,
+</span><span id="__span-12-24"><a id="__codelineno-12-24" name="__codelineno-12-24" href="#__codelineno-12-24"></a>            &#39;mean_wave_period&#39;,
+</span><span id="__span-12-25"><a id="__codelineno-12-25" name="__codelineno-12-25" href="#__codelineno-12-25"></a>            &#39;mean_wave_direction&#39;,
+</span><span id="__span-12-26"><a id="__codelineno-12-26" name="__codelineno-12-26" href="#__codelineno-12-26"></a>            &#39;wave_spectral_directional_width&#39;],
+</span><span id="__span-12-27"><a id="__codelineno-12-27" name="__codelineno-12-27" href="#__codelineno-12-27"></a>&#39;year&#39;: &#39;1995&#39;}
+</span><span id="__span-12-28"><a id="__codelineno-12-28" name="__codelineno-12-28" href="#__codelineno-12-28"></a>2026-01-23 04:38:49,652 INFO [2025-12-11T00:00:00] Please note that a dedicated catalogue entry for this dataset, post-processed and stored in Analysis Ready Cloud Optimized (ARCO) format (Zarr), is available for optimised time-series retrievals (i.e. for retrieving data from selected variables for a single point over an extended period of time in an efficient way). You can discover it [here](https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels-timeseries?tab=overview)
+</span><span id="__span-12-29"><a id="__codelineno-12-29" name="__codelineno-12-29" href="#__codelineno-12-29"></a>2026-01-23 04:38:49,653 INFO Request ID is 8ba0c4a6-cd59-4f12-a2cd-c0496bb938b8
+</span><span id="__span-12-30"><a id="__codelineno-12-30" name="__codelineno-12-30" href="#__codelineno-12-30"></a>2026-01-23 04:38:49,839 INFO status has been updated to accepted
+</span><span id="__span-12-31"><a id="__codelineno-12-31" name="__codelineno-12-31" href="#__codelineno-12-31"></a>2026-01-23 04:39:23,434 INFO status has been updated to running
+</span><span id="__span-12-32"><a id="__codelineno-12-32" name="__codelineno-12-32" href="#__codelineno-12-32"></a>2026-01-23 04:39:40,736 INFO status has been updated to successful
+</span><span id="__span-12-33"><a id="__codelineno-12-33" name="__codelineno-12-33" href="#__codelineno-12-33"></a>Downloading /scratch/cawohdcst_ft2/tyo/data/era5_waves/era5_19950105/part2.grib
+</span><span id="__span-12-34"><a id="__codelineno-12-34" name="__codelineno-12-34" href="#__codelineno-12-34"></a>2026-01-23 04:39:43,730 INFO [2025-12-11T00:00:00] Please note that a dedicated catalogue entry for this dataset, post-processed and stored in Analysis Ready Cloud Optimized (ARCO) format (Zarr), is available for optimised time-series retrievals (i.e. for retrieving data from selected variables for a single point over an extended period of time in an efficient way). You can discover it [here](https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels-timeseries?tab=overview)
+</span><span id="__span-12-35"><a id="__codelineno-12-35" name="__codelineno-12-35" href="#__codelineno-12-35"></a>2026-01-23 04:39:43,730 INFO Request ID is e2bf8015-d921-4474-bde4-f6449f5e3381
+</span><span id="__span-12-36"><a id="__codelineno-12-36" name="__codelineno-12-36" href="#__codelineno-12-36"></a>2026-01-23 04:39:43,916 INFO status has been updated to accepted
+</span><span id="__span-12-37"><a id="__codelineno-12-37" name="__codelineno-12-37" href="#__codelineno-12-37"></a>2026-01-23 04:41:01,360 INFO status has been updated to running
+</span><span id="__span-12-38"><a id="__codelineno-12-38" name="__codelineno-12-38" href="#__codelineno-12-38"></a>2026-01-23 04:41:40,172 INFO status has been updated to successful
+</span><span id="__span-12-39"><a id="__codelineno-12-39" name="__codelineno-12-39" href="#__codelineno-12-39"></a>(cdsapi) sh-4.4$ 
+</span></code></pre></div>
+</details>
 <h3 id="mercator-glorys12v1-data">Mercator GLORYS12V1 Data<a class="headerlink" href="#mercator-glorys12v1-data" title="Permanent link">&para;</a></h3>
 <p>From the Mercator Reanalysis GLORYS12V1 the following variables are used as ROMS initial, boundary conditions and climatology files and need to be downloaded:</p>
 <ul>
@@ -1521,12 +2412,494 @@
 <p>Data from GLORYS12V1 are downloaded using copernicusmarine api and python sripts.
 Data download scripts: </p>
 <ul>
-<li><code>/home/cawohdcst_ft2/get_glorys/ get_glorys_reanalysis.py</code> (1995 - 2021)</li>
-<li><code>/home/cawohdcst_ft2/get_glorys/ get_glorys_reanalysis_interim.py</code> (2021 - 2024)</li>
+<li><code>/home/cawohdcst_ft2/hindcast_scripts/preprocess/get_glorys/get_glorys_reanalysis.py</code> (1995 - 2021)</li>
+<li><code>/home/cawohdcst_ft2/hindcast_scripts/preprocess/get_glorys/get_glorys_reanalysis_interim.py</code> (2021 - 2024)</li>
 </ul>
-<p>Similar with the previous script (<a href="#fig1">Figure 1</a>), adjust the dates by replacing the value of variables <code>start_date</code> and <code>end_date</code> to specify the downloading period. </p>
-<p>The daily GLORYS12V1 files are placed on: <code>/scratch/&lt;your_user_name&gt;/mercator/GLORYS_Reanalysis_LO_YYYY-MM-DDT00:00:00.nc</code>, or in this case our username is <code>cawohdcst_ft2</code>.</p>
-<p><em>work in progress</em></p>
+<p>Copy those scripts to your working directory.
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="o">[</span>cawohdcst_ft2@mdclogin1<span class="w"> </span>preprocess<span class="o">]</span>$<span class="w"> </span><span class="nb">pwd</span>
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>/home/cawohdcst_ft2/tyo/preprocess
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="o">[</span>cawohdcst_ft2@mdclogin1<span class="w"> </span>preprocess<span class="o">]</span>$<span class="w"> </span>cp<span class="w"> </span>-r<span class="w"> </span>/home/cawohdcst_ft2/hindcast_scripts/preprocess/get_glorys
+</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="o">[</span>cawohdcst_ft2@mdclogin1<span class="w"> </span>preprocess<span class="o">]</span>$<span class="w"> </span>ls<span class="w"> </span>get_glorys/<span class="w"> </span>-l
+</span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a>total<span class="w"> </span><span class="m">8</span>
+</span><span id="__span-13-6"><a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a>-rwxr-xr-x.<span class="w"> </span><span class="m">1</span><span class="w"> </span>cawohdcst_ft2<span class="w"> </span>cls_ext<span class="w"> </span><span class="m">1277</span><span class="w"> </span>Jan<span class="w"> </span><span class="m">23</span><span class="w"> </span><span class="m">07</span>:41<span class="w"> </span>get_glorys_reanalysis_interim.py
+</span><span id="__span-13-7"><a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a>-rwxr-xr-x.<span class="w"> </span><span class="m">1</span><span class="w"> </span>cawohdcst_ft2<span class="w"> </span>cls_ext<span class="w"> </span><span class="m">1274</span><span class="w"> </span>Jan<span class="w"> </span><span class="m">23</span><span class="w"> </span><span class="m">07</span>:41<span class="w"> </span>get_glorys_reanalysis.py
+</span><span id="__span-13-8"><a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a><span class="o">[</span>cawohdcst_ft2@mdclogin1<span class="w"> </span>preprocess<span class="o">]</span>$<span class="w"> </span>
+</span></code></pre></div></p>
+<p>Similar with the previous script (<a href="#get-era5-pl-script">Code block 1</a>), adjust the dates by replacing the value of variables <code>start_date</code> and <code>end_date</code> to specify the downloading period, as well as the <code>output_directory</code>. </p>
+<p>The daily GLORYS12V1 files are placed on: <code>/scratch/&lt;your_user_name&gt;/&lt;your_name&gt;/data/mercator/GLORYS_Reanalysis_LO_YYYY-MM-DDT00:00:00.nc</code>, or in this case our username is <code>cawohdcst_ft2</code>.</p>
+<details class="success">
+<summary>Click here to view the execution log.</summary>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>INFO - 2026-01-23T04:35:10Z - Selected dataset version: &quot;202311&quot;
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>INFO - 2026-01-23T04:35:10Z - Selected dataset part: &quot;default&quot;
+</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>WARNING - 2026-01-23T04:35:10Z - Some of your subset selection [0.494, 5727.9169921875] for the depth dimension exceed the dataset coordinates [0.49402499198913574, 5727.9169921875]
+</span><span id="__span-14-4"><a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>INFO - 2026-01-23T04:35:18Z - Starting download. Please wait...
+</span><span id="__span-14-5"><a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a>100%|██| 74/74 [00:19&lt;00:00,  3.74it/s]
+</span><span id="__span-14-6"><a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a>INFO - 2026-01-23T04:35:40Z - Successfully downloaded to /scratch/cawohdcst_ft2/tyo/data/mercator/GLORYS_Reanalysis_LO_1995-01-04T00:00:00.nc
+</span><span id="__span-14-7"><a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a>WARNING - 2026-01-23T04:35:40Z - &#39;force_download&#39; has been deprecated.
+</span><span id="__span-14-8"><a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a>INFO - 2026-01-23T04:35:44Z - Selected dataset version: &quot;202311&quot;
+</span><span id="__span-14-9"><a id="__codelineno-14-9" name="__codelineno-14-9" href="#__codelineno-14-9"></a>INFO - 2026-01-23T04:35:44Z - Selected dataset part: &quot;default&quot;
+</span><span id="__span-14-10"><a id="__codelineno-14-10" name="__codelineno-14-10" href="#__codelineno-14-10"></a>WARNING - 2026-01-23T04:35:44Z - Some of your subset selection [0.494, 5727.9169921875] for the depth dimension exceed the dataset coordinates [0.49402499198913574, 5727.9169921875]
+</span><span id="__span-14-11"><a id="__codelineno-14-11" name="__codelineno-14-11" href="#__codelineno-14-11"></a>INFO - 2026-01-23T04:35:52Z - Starting download. Please wait...
+</span><span id="__span-14-12"><a id="__codelineno-14-12" name="__codelineno-14-12" href="#__codelineno-14-12"></a>100%|██| 74/74 [00:19&lt;00:00,  3.83it/s]
+</span><span id="__span-14-13"><a id="__codelineno-14-13" name="__codelineno-14-13" href="#__codelineno-14-13"></a>INFO - 2026-01-23T04:36:13Z - Successfully downloaded to /scratch/cawohdcst_ft2/tyo/data/mercator/GLORYS_Reanalysis_LO_1995-01-05T00:00:00.nc
+</span></code></pre></div>
+</details>
+<h2 id="pre-processing">Pre Processing<a class="headerlink" href="#pre-processing" title="Permanent link">&para;</a></h2>
+<p>After acquiring the global reanalysis data, it must be converted into the formats required by ROMS, SWAN, and WRF. The following sections describe the steps involved in transforming the data, as well as the locations of the scripts used in each stage. Once the pre-processing is complete, the data are properly formatted and ready to be consumed by the models.</p>
+<h3 id="wrf-forcing-files">WRF Forcing Files<a class="headerlink" href="#wrf-forcing-files" title="Permanent link">&para;</a></h3>
+<p>The regional atmospheric model WRF forcing files are generated using the WRF Preprocessing System (<a href="https://www2.mmm.ucar.edu/wrf/users/wrf_users_guide/build/html/wps.html" target="_blank">WPS</a>) which is already installed on the HPC.</p>
+<p>After the ERA5 surface and pressure levels <code>.grib</code> files are downloaded for a given day, three sequential steps should be followed to generate the WRF file for that specific day:</p>
+<ul>
+<li>Run ungrib - <code>/home/cawohdcst_ft2/hindcast_scripts/preprocess/wps_run/slurm_run_ungrib.bash</code></li>
+<li>Run metgrid - <code>/home/cawohdcst_ft2/hindcast_scripts/preprocess/wps_run/slurm_run_ungrib.bash</code></li>
+<li>Run real - <code>/home/cawohdcst_ft2/hindcast_scripts/preprocess/wps_run/slurm_run_real.bash</code></li>
+</ul>
+<p>Now, copy these files to your working directory. 
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="o">[</span>cawohdcst_ft2@mdclogin1<span class="w"> </span>preprocess<span class="o">]</span>$<span class="w"> </span><span class="nb">pwd</span>
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>/home/cawohdcst_ft2/tyo/preprocess
+</span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="o">[</span>cawohdcst_ft2@mdclogin1<span class="w"> </span>preprocess<span class="o">]</span>$<span class="w"> </span>cp<span class="w"> </span>-r<span class="w"> </span>/home/cawohdcst_ft2/hindcast_scripts/preprocess/wps_run
+</span><span id="__span-15-4"><a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a><span class="o">[</span>cawohdcst_ft2@mdclogin1<span class="w"> </span>preprocess<span class="o">]</span>$<span class="w"> </span>ls<span class="w"> </span>wps_run/<span class="w"> </span>-l
+</span><span id="__span-15-5"><a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a>total<span class="w"> </span><span class="m">12</span>
+</span><span id="__span-15-6"><a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a>-rwxr-xr-x.<span class="w"> </span><span class="m">1</span><span class="w"> </span>cawohdcst_ft2<span class="w"> </span>cls_ext<span class="w"> </span><span class="m">2876</span><span class="w"> </span>Jan<span class="w"> </span><span class="m">23</span><span class="w"> </span><span class="m">07</span>:13<span class="w"> </span>slurm_run_metgrid.bash
+</span><span id="__span-15-7"><a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a>-rwxr-xr-x.<span class="w"> </span><span class="m">1</span><span class="w"> </span>cawohdcst_ft2<span class="w"> </span>cls_ext<span class="w"> </span><span class="m">2892</span><span class="w"> </span>Jan<span class="w"> </span><span class="m">23</span><span class="w"> </span><span class="m">07</span>:13<span class="w"> </span>slurm_run_real.bash
+</span><span id="__span-15-8"><a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a>-rwxr-xr-x.<span class="w"> </span><span class="m">1</span><span class="w"> </span>cawohdcst_ft2<span class="w"> </span>cls_ext<span class="w"> </span><span class="m">2793</span><span class="w"> </span>Jan<span class="w"> </span><span class="m">23</span><span class="w"> </span><span class="m">07</span>:56<span class="w"> </span>slurm_run_ungrib.bash
+</span><span id="__span-15-9"><a id="__codelineno-15-9" name="__codelineno-15-9" href="#__codelineno-15-9"></a><span class="o">[</span>cawohdcst_ft2@mdclogin1<span class="w"> </span>preprocess<span class="o">]</span>$<span class="w"> </span>
+</span></code></pre></div>
+The codes should be run in sequence (step 1 – run ungrib, step 2 – run metgrid, step 3 – run real) for the dates you want to generate the forcing files.*</p>
+<p>Then run the slurm scripts with:
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>sbatch<span class="w"> </span>slurm_run_ungrib.bash<span class="w"> </span><span class="c1">#(once completed, go to the next)</span>
+</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>sbatch<span class="w"> </span>slurm_run_metgrid.bash<span class="w"> </span><span class="c1">#(once completed, go to the next)</span>
+</span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a>sbatch<span class="w"> </span>slurm_run_real.bash<span class="w"> </span><span class="c1">#(once completed, WRF forcing file are generated)</span>
+</span></code></pre></div></p>
+<details class="success">
+<summary>Click here to view the execution log.</summary>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:3"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><input id="__tabbed_4_3" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">Ungrib</label><label for="__tabbed_4_2">Metgrid</label><label for="__tabbed_4_3">Real</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-text highlight"><span class="filename">run_ungrib_loop_<jobid>.log</span><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>...
+</span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>...
+</span><span id="__span-17-3"><a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a>!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+</span><span id="__span-17-4"><a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a>!  Successful completion of ungrib.   !
+</span><span id="__span-17-5"><a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a>!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+</span><span id="__span-17-6"><a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a>Reading from FILE at time 1995-01-05_12
+</span><span id="__span-17-7"><a id="__codelineno-17-7" name="__codelineno-17-7" href="#__codelineno-17-7"></a>Reading from FILE at time 1995-01-05_15
+</span><span id="__span-17-8"><a id="__codelineno-17-8" name="__codelineno-17-8" href="#__codelineno-17-8"></a>Reading from FILE at time 1995-01-05_18
+</span><span id="__span-17-9"><a id="__codelineno-17-9" name="__codelineno-17-9" href="#__codelineno-17-9"></a>Reading from FILE at time 1995-01-05_21
+</span><span id="__span-17-10"><a id="__codelineno-17-10" name="__codelineno-17-10" href="#__codelineno-17-10"></a>Reading from FILE at time 1995-01-06_00
+</span><span id="__span-17-11"><a id="__codelineno-17-11" name="__codelineno-17-11" href="#__codelineno-17-11"></a>Reading from FILE at time 1995-01-06_03
+</span><span id="__span-17-12"><a id="__codelineno-17-12" name="__codelineno-17-12" href="#__codelineno-17-12"></a>Reading from FILE at time 1995-01-06_06
+</span><span id="__span-17-13"><a id="__codelineno-17-13" name="__codelineno-17-13" href="#__codelineno-17-13"></a>Reading from FILE at time 1995-01-06_09
+</span><span id="__span-17-14"><a id="__codelineno-17-14" name="__codelineno-17-14" href="#__codelineno-17-14"></a>*** Successful completion of program avg_tsfc.exe ***
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-text highlight"><span class="filename">run_metgrid_loop_<jobid>.log</span><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>+ mpiexec.hydra -bootstrap slurm -n 128 -ppn 32 ./metgrid.exe
+</span><span id="__span-18-2"><a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a>Processing domain 1 of 1
+</span><span id="__span-18-3"><a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a>    ./TAVGSFC
+</span><span id="__span-18-4"><a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a>Processing 1995-01-05_12
+</span><span id="__span-18-5"><a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a>    FILE_PL
+</span><span id="__span-18-6"><a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a>    FILE_SFC
+</span><span id="__span-18-7"><a id="__codelineno-18-7" name="__codelineno-18-7" href="#__codelineno-18-7"></a>Processing 1995-01-05_15
+</span><span id="__span-18-8"><a id="__codelineno-18-8" name="__codelineno-18-8" href="#__codelineno-18-8"></a>    FILE_PL
+</span><span id="__span-18-9"><a id="__codelineno-18-9" name="__codelineno-18-9" href="#__codelineno-18-9"></a>    FILE_SFC
+</span><span id="__span-18-10"><a id="__codelineno-18-10" name="__codelineno-18-10" href="#__codelineno-18-10"></a>Processing 1995-01-05_18
+</span><span id="__span-18-11"><a id="__codelineno-18-11" name="__codelineno-18-11" href="#__codelineno-18-11"></a>    FILE_PL
+</span><span id="__span-18-12"><a id="__codelineno-18-12" name="__codelineno-18-12" href="#__codelineno-18-12"></a>    FILE_SFC
+</span><span id="__span-18-13"><a id="__codelineno-18-13" name="__codelineno-18-13" href="#__codelineno-18-13"></a>Processing 1995-01-05_21
+</span><span id="__span-18-14"><a id="__codelineno-18-14" name="__codelineno-18-14" href="#__codelineno-18-14"></a>    FILE_PL
+</span><span id="__span-18-15"><a id="__codelineno-18-15" name="__codelineno-18-15" href="#__codelineno-18-15"></a>    FILE_SFC
+</span><span id="__span-18-16"><a id="__codelineno-18-16" name="__codelineno-18-16" href="#__codelineno-18-16"></a>Processing 1995-01-06_00
+</span><span id="__span-18-17"><a id="__codelineno-18-17" name="__codelineno-18-17" href="#__codelineno-18-17"></a>    FILE_PL
+</span><span id="__span-18-18"><a id="__codelineno-18-18" name="__codelineno-18-18" href="#__codelineno-18-18"></a>    FILE_SFC
+</span><span id="__span-18-19"><a id="__codelineno-18-19" name="__codelineno-18-19" href="#__codelineno-18-19"></a>Processing 1995-01-06_03
+</span><span id="__span-18-20"><a id="__codelineno-18-20" name="__codelineno-18-20" href="#__codelineno-18-20"></a>    FILE_PL
+</span><span id="__span-18-21"><a id="__codelineno-18-21" name="__codelineno-18-21" href="#__codelineno-18-21"></a>    FILE_SFC
+</span><span id="__span-18-22"><a id="__codelineno-18-22" name="__codelineno-18-22" href="#__codelineno-18-22"></a>Processing 1995-01-06_06
+</span><span id="__span-18-23"><a id="__codelineno-18-23" name="__codelineno-18-23" href="#__codelineno-18-23"></a>    FILE_PL
+</span><span id="__span-18-24"><a id="__codelineno-18-24" name="__codelineno-18-24" href="#__codelineno-18-24"></a>    FILE_SFC
+</span><span id="__span-18-25"><a id="__codelineno-18-25" name="__codelineno-18-25" href="#__codelineno-18-25"></a>Processing 1995-01-06_09
+</span><span id="__span-18-26"><a id="__codelineno-18-26" name="__codelineno-18-26" href="#__codelineno-18-26"></a>    FILE_PL
+</span><span id="__span-18-27"><a id="__codelineno-18-27" name="__codelineno-18-27" href="#__codelineno-18-27"></a>    FILE_SFC
+</span><span id="__span-18-28"><a id="__codelineno-18-28" name="__codelineno-18-28" href="#__codelineno-18-28"></a>Processing 1995-01-06_12
+</span><span id="__span-18-29"><a id="__codelineno-18-29" name="__codelineno-18-29" href="#__codelineno-18-29"></a>    FILE_PL
+</span><span id="__span-18-30"><a id="__codelineno-18-30" name="__codelineno-18-30" href="#__codelineno-18-30"></a>    FILE_SFC
+</span><span id="__span-18-31"><a id="__codelineno-18-31" name="__codelineno-18-31" href="#__codelineno-18-31"></a>!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+</span><span id="__span-18-32"><a id="__codelineno-18-32" name="__codelineno-18-32" href="#__codelineno-18-32"></a>!  Successful completion of metgrid.  !
+</span><span id="__span-18-33"><a id="__codelineno-18-33" name="__codelineno-18-33" href="#__codelineno-18-33"></a>!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+</span><span id="__span-18-34"><a id="__codelineno-18-34" name="__codelineno-18-34" href="#__codelineno-18-34"></a>
+</span><span id="__span-18-35"><a id="__codelineno-18-35" name="__codelineno-18-35" href="#__codelineno-18-35"></a>real    2m57.264s
+</span><span id="__span-18-36"><a id="__codelineno-18-36" name="__codelineno-18-36" href="#__codelineno-18-36"></a>user    0m0.012s
+</span><span id="__span-18-37"><a id="__codelineno-18-37" name="__codelineno-18-37" href="#__codelineno-18-37"></a>sys 0m0.040s
+</span><span id="__span-18-38"><a id="__codelineno-18-38" name="__codelineno-18-38" href="#__codelineno-18-38"></a>++ date -d &#39;19950105 +1 day&#39; +%Y%m%d
+</span><span id="__span-18-39"><a id="__codelineno-18-39" name="__codelineno-18-39" href="#__codelineno-18-39"></a>+ current_date=19950106
+</span><span id="__span-18-40"><a id="__codelineno-18-40" name="__codelineno-18-40" href="#__codelineno-18-40"></a>+ [[ 19950106 -le 19950105 ]]
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-text highlight"><span class="filename">run_real_loop_<jobid>.log</span><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>starting wrf task          256  of          512
+</span><span id="__span-19-2"><a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>starting wrf task          266  of          512
+</span><span id="__span-19-3"><a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a>starting wrf task          269  of          512
+</span><span id="__span-19-4"><a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a>starting wrf task          383  of          512
+</span><span id="__span-19-5"><a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a>starting wrf task          265  of          512
+</span><span id="__span-19-6"><a id="__codelineno-19-6" name="__codelineno-19-6" href="#__codelineno-19-6"></a>starting wrf task          270  of          512
+</span><span id="__span-19-7"><a id="__codelineno-19-7" name="__codelineno-19-7" href="#__codelineno-19-7"></a>starting wrf task          377  of          512
+</span><span id="__span-19-8"><a id="__codelineno-19-8" name="__codelineno-19-8" href="#__codelineno-19-8"></a>starting wrf task          352  of          512
+</span><span id="__span-19-9"><a id="__codelineno-19-9" name="__codelineno-19-9" href="#__codelineno-19-9"></a>starting wrf task          261  of          512
+</span><span id="__span-19-10"><a id="__codelineno-19-10" name="__codelineno-19-10" href="#__codelineno-19-10"></a>starting wrf task          358  of          512
+</span><span id="__span-19-11"><a id="__codelineno-19-11" name="__codelineno-19-11" href="#__codelineno-19-11"></a>starting wrf task          373  of          512
+</span><span id="__span-19-12"><a id="__codelineno-19-12" name="__codelineno-19-12" href="#__codelineno-19-12"></a>starting wrf task          374  of          512
+</span><span id="__span-19-13"><a id="__codelineno-19-13" name="__codelineno-19-13" href="#__codelineno-19-13"></a>starting wrf task          263  of          512
+</span><span id="__span-19-14"><a id="__codelineno-19-14" name="__codelineno-19-14" href="#__codelineno-19-14"></a>starting wrf task          371  of          512
+</span><span id="__span-19-15"><a id="__codelineno-19-15" name="__codelineno-19-15" href="#__codelineno-19-15"></a>starting wrf task          375  of          512
+</span><span id="__span-19-16"><a id="__codelineno-19-16" name="__codelineno-19-16" href="#__codelineno-19-16"></a>starting wrf task          380  of          512
+</span><span id="__span-19-17"><a id="__codelineno-19-17" name="__codelineno-19-17" href="#__codelineno-19-17"></a>starting wrf task          304  of          512
+</span><span id="__span-19-18"><a id="__codelineno-19-18" name="__codelineno-19-18" href="#__codelineno-19-18"></a>starting wrf task          317  of          512
+</span><span id="__span-19-19"><a id="__codelineno-19-19" name="__codelineno-19-19" href="#__codelineno-19-19"></a>starting wrf task          318  of          512
+</span><span id="__span-19-20"><a id="__codelineno-19-20" name="__codelineno-19-20" href="#__codelineno-19-20"></a>
+</span><span id="__span-19-21"><a id="__codelineno-19-21" name="__codelineno-19-21" href="#__codelineno-19-21"></a>real    4m53.225s
+</span><span id="__span-19-22"><a id="__codelineno-19-22" name="__codelineno-19-22" href="#__codelineno-19-22"></a>user    0m0.013s
+</span><span id="__span-19-23"><a id="__codelineno-19-23" name="__codelineno-19-23" href="#__codelineno-19-23"></a>sys 0m0.041s
+</span><span id="__span-19-24"><a id="__codelineno-19-24" name="__codelineno-19-24" href="#__codelineno-19-24"></a>++ date -d &#39;19950105 +1 day&#39; +%Y%m%d
+</span><span id="__span-19-25"><a id="__codelineno-19-25" name="__codelineno-19-25" href="#__codelineno-19-25"></a>+ current_date=19950106
+</span><span id="__span-19-26"><a id="__codelineno-19-26" name="__codelineno-19-26" href="#__codelineno-19-26"></a>+ [[ 19950106 -le 19950105 ]]
+</span></code></pre></div>
+</div>
+</div>
+</div>
+</details>
+<h3 id="swan-forcing-files">SWAN Forcing Files<a class="headerlink" href="#swan-forcing-files" title="Permanent link">&para;</a></h3>
+<p>After the ERA5 waves <code>*.grib</code> files are downloaded for a desired range of dates the follow script should be edit to generate the SWAN boundary condition files:
+<code>/home/cawohdcst_ft2/hindcast_scripts/preprocess/get_swan_bry/make_swan_bc.py</code> and <code>/home/cawohdcst_ft2/hindcast_scripts/preprocess/get_swan_bry/slurm_make_swan_bc.bash</code></p>
+<p>Don't forget to copy this file to your working directory, 
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="o">[</span>cawohdcst_ft2@mdclogin1<span class="w"> </span>preprocess<span class="o">]</span>$<span class="w"> </span><span class="nb">pwd</span>
+</span><span id="__span-20-2"><a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a>/home/cawohdcst_ft2/tyo/preprocess
+</span><span id="__span-20-3"><a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a><span class="o">[</span>cawohdcst_ft2@mdclogin1<span class="w"> </span>preprocess<span class="o">]</span>$<span class="w"> </span>cp<span class="w"> </span>-r<span class="w"> </span>/home/cawohdcst_ft2/hindcast_scripts/preprocess/get_swan_bry
+</span><span id="__span-20-4"><a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a><span class="o">[</span>cawohdcst_ft2@mdclogin1<span class="w"> </span>preprocess<span class="o">]</span>$<span class="w"> </span>ls<span class="w"> </span>get_swan_bry/<span class="w"> </span>-l
+</span><span id="__span-20-5"><a id="__codelineno-20-5" name="__codelineno-20-5" href="#__codelineno-20-5"></a>total<span class="w"> </span><span class="m">8</span>
+</span><span id="__span-20-6"><a id="__codelineno-20-6" name="__codelineno-20-6" href="#__codelineno-20-6"></a>-rwxr-xr-x.<span class="w"> </span><span class="m">1</span><span class="w"> </span>cawohdcst_ft2<span class="w"> </span>cls_ext<span class="w"> </span><span class="m">2874</span><span class="w"> </span>Jan<span class="w"> </span><span class="m">23</span><span class="w"> </span><span class="m">07</span>:41<span class="w"> </span>make_swan_bc.py
+</span><span id="__span-20-7"><a id="__codelineno-20-7" name="__codelineno-20-7" href="#__codelineno-20-7"></a>-rwxr-xr-x.<span class="w"> </span><span class="m">1</span><span class="w"> </span>cawohdcst_ft2<span class="w"> </span>cls_ext<span class="w">  </span><span class="m">279</span><span class="w"> </span>Jan<span class="w"> </span><span class="m">23</span><span class="w"> </span><span class="m">07</span>:41<span class="w"> </span>slurm_make_swan_bc.bash
+</span><span id="__span-20-8"><a id="__codelineno-20-8" name="__codelineno-20-8" href="#__codelineno-20-8"></a><span class="o">[</span>cawohdcst_ft2@mdclogin1<span class="w"> </span>preprocess<span class="o">]</span>$<span class="w"> </span>
+</span></code></pre></div>
+and modify the following:
+<div class="language-python highlight"><span class="filename">make_swan_bc.py</span><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="o">...</span>
+</span><span id="__span-21-2"><a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a><span class="o">...</span>
+</span><span id="__span-21-3"><a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a><span class="mi">68</span> <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+</span><span id="__span-21-4"><a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a><span class="hll"><span class="mi">69</span>     <span class="n">start_str</span> <span class="o">=</span> <span class="s2">&quot;1995-01-01&quot;</span> <span class="c1"># Modify this</span>
+</span></span><span id="__span-21-5"><a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a><span class="hll"><span class="mi">70</span>     <span class="n">end_str</span> <span class="o">=</span> <span class="s2">&quot;1995-01-06&quot;</span>   <span class="c1"># Modify this</span>
+</span></span><span id="__span-21-6"><a id="__codelineno-21-6" name="__codelineno-21-6" href="#__codelineno-21-6"></a><span class="mi">71</span>     <span class="n">start_date</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span><span class="n">start_str</span><span class="p">,</span> <span class="s2">&quot;%Y-%m-</span><span class="si">%d</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span id="__span-21-7"><a id="__codelineno-21-7" name="__codelineno-21-7" href="#__codelineno-21-7"></a><span class="mi">72</span>     <span class="n">end_date</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span><span class="n">end_str</span><span class="p">,</span> <span class="s2">&quot;%Y-%m-</span><span class="si">%d</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span id="__span-21-8"><a id="__codelineno-21-8" name="__codelineno-21-8" href="#__codelineno-21-8"></a><span class="o">...</span>
+</span><span id="__span-21-9"><a id="__codelineno-21-9" name="__codelineno-21-9" href="#__codelineno-21-9"></a><span class="o">...</span>
+</span></code></pre></div></p>
+<p>Then run with the slurm script:
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>sbatch<span class="w"> </span>slurm_make_swan_bc.bash
+</span></code></pre></div></p>
+<details class="success">
+<summary>Click here to view the execution log.</summary>
+<div class="language-text highlight"><span class="filename">run_swan_bc_<jobid>.log</span><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>...
+</span><span id="__span-23-2"><a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a>...
+</span><span id="__span-23-3"><a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a>✅ Processed era5_19950101
+</span><span id="__span-23-4"><a id="__codelineno-23-4" name="__codelineno-23-4" href="#__codelineno-23-4"></a>✅ Processed era5_19950102
+</span><span id="__span-23-5"><a id="__codelineno-23-5" name="__codelineno-23-5" href="#__codelineno-23-5"></a>✅ Processed era5_19950103
+</span><span id="__span-23-6"><a id="__codelineno-23-6" name="__codelineno-23-6" href="#__codelineno-23-6"></a>✅ Processed era5_19950104
+</span><span id="__span-23-7"><a id="__codelineno-23-7" name="__codelineno-23-7" href="#__codelineno-23-7"></a>✅ Processed era5_19950105
+</span></code></pre></div>
+</details>
+<h3 id="roms-forcing-files">ROMS Forcing Files<a class="headerlink" href="#roms-forcing-files" title="Permanent link">&para;</a></h3>
+<p>GLORYS12V1 daily data are preprocessed using modified scripts from the <a href="https://github.com/parkermac/LO">LiveOcean python toolbox</a>. The toolbox is a set of tools developed for a forecast system in the US northwest coast.</p>
+<p>The LO pre-processing scripts are designed to generate ROMS forcing files from HYCOM forecast outputs. The scripts to generate ROMS initial conditions files were adapted to use GLORYS12V1 data and interpolation methods were also modified, changing the nearest neighbor interpolations on both horizontal and vertical to linear interpolation.</p>
+<p>The modified scripts are under the folder <code>/home/cawohdcst_ft2/hindcast_scripts/preprocess/LO_user</code>. Copy this directory to your working directory.
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-24-1"><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a><span class="o">[</span>cawohdcst_ft2@mdclogin1<span class="w"> </span>preprocess<span class="o">]</span>$<span class="w"> </span><span class="nb">pwd</span>
+</span><span id="__span-24-2"><a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a>/home/cawohdcst_ft2/tyo/preprocess
+</span><span id="__span-24-3"><a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a><span class="o">[</span>cawohdcst_ft2@mdclogin1<span class="w"> </span>preprocess<span class="o">]</span>$<span class="w"> </span>cp<span class="w"> </span>-r<span class="w"> </span>/home/cawohdcst_ft2/hindcast_scripts/preprocess/LO_user<span class="w"> </span>.
+</span><span id="__span-24-4"><a id="__codelineno-24-4" name="__codelineno-24-4" href="#__codelineno-24-4"></a><span class="o">[</span>cawohdcst_ft2@mdclogin1<span class="w"> </span>preprocess<span class="o">]</span>$<span class="w"> </span>ls<span class="w"> </span>LO_user/<span class="w"> </span>-l
+</span><span id="__span-24-5"><a id="__codelineno-24-5" name="__codelineno-24-5" href="#__codelineno-24-5"></a>total<span class="w"> </span><span class="m">28</span>
+</span><span id="__span-24-6"><a id="__codelineno-24-6" name="__codelineno-24-6" href="#__codelineno-24-6"></a>drwxr-xr-x.<span class="w">  </span><span class="m">5</span><span class="w"> </span>cawohdcst_ft2<span class="w"> </span>cls_ext<span class="w"> </span><span class="m">4096</span><span class="w"> </span>Jan<span class="w"> </span><span class="m">23</span><span class="w"> </span><span class="m">09</span>:01<span class="w"> </span>driver
+</span><span id="__span-24-7"><a id="__codelineno-24-7" name="__codelineno-24-7" href="#__codelineno-24-7"></a>drwxr-xr-x.<span class="w"> </span><span class="m">11</span><span class="w"> </span>cawohdcst_ft2<span class="w"> </span>cls_ext<span class="w"> </span><span class="m">4096</span><span class="w"> </span>Jan<span class="w"> </span><span class="m">23</span><span class="w"> </span><span class="m">08</span>:49<span class="w"> </span>extract
+</span><span id="__span-24-8"><a id="__codelineno-24-8" name="__codelineno-24-8" href="#__codelineno-24-8"></a>drwxr-xr-x.<span class="w">  </span><span class="m">4</span><span class="w"> </span>cawohdcst_ft2<span class="w"> </span>cls_ext<span class="w"> </span><span class="m">4096</span><span class="w"> </span>Jan<span class="w"> </span><span class="m">23</span><span class="w"> </span><span class="m">08</span>:49<span class="w"> </span>forcing
+</span><span id="__span-24-9"><a id="__codelineno-24-9" name="__codelineno-24-9" href="#__codelineno-24-9"></a>-rwxr-xr-x.<span class="w">  </span><span class="m">1</span><span class="w"> </span>cawohdcst_ft2<span class="w"> </span>cls_ext<span class="w"> </span><span class="m">3564</span><span class="w"> </span>Jan<span class="w"> </span><span class="m">23</span><span class="w"> </span><span class="m">08</span>:58<span class="w"> </span>get_lo_info.py
+</span><span id="__span-24-10"><a id="__codelineno-24-10" name="__codelineno-24-10" href="#__codelineno-24-10"></a>drwxr-xr-x.<span class="w">  </span><span class="m">3</span><span class="w"> </span>cawohdcst_ft2<span class="w"> </span>cls_ext<span class="w"> </span><span class="m">4096</span><span class="w"> </span>Jan<span class="w"> </span><span class="m">23</span><span class="w"> </span><span class="m">08</span>:49<span class="w"> </span>lo_tools
+</span><span id="__span-24-11"><a id="__codelineno-24-11" name="__codelineno-24-11" href="#__codelineno-24-11"></a>drwxr-xr-x.<span class="w">  </span><span class="m">3</span><span class="w"> </span>cawohdcst_ft2<span class="w"> </span>cls_ext<span class="w"> </span><span class="m">4096</span><span class="w"> </span>Jan<span class="w"> </span><span class="m">23</span><span class="w"> </span><span class="m">08</span>:49<span class="w"> </span>pgrid
+</span><span id="__span-24-12"><a id="__codelineno-24-12" name="__codelineno-24-12" href="#__codelineno-24-12"></a>drwxr-xr-x.<span class="w">  </span><span class="m">2</span><span class="w"> </span>cawohdcst_ft2<span class="w"> </span>cls_ext<span class="w"> </span><span class="m">4096</span><span class="w"> </span>Jan<span class="w"> </span><span class="m">23</span><span class="w"> </span><span class="m">08</span>:49<span class="w"> </span>__pycache__
+</span><span id="__span-24-13"><a id="__codelineno-24-13" name="__codelineno-24-13" href="#__codelineno-24-13"></a><span class="o">[</span>cawohdcst_ft2@mdclogin1<span class="w"> </span>preprocess<span class="o">]</span>$<span class="w"> </span>
+</span></code></pre></div></p>
+<h4 id="1-generate-templates-for-icbc">1 Generate templates for ic/bc<a class="headerlink" href="#1-generate-templates-for-icbc" title="Permanent link">&para;</a></h4>
+<p>Generate template files for the hindcast using <code>/home/cawohdcst_ft2/tyo/preprocess/get_roms_icbc/slurm_run_ocnA0_wrap.bash</code>. Adjust the <code>date</code> as needed (see the hightlighted lines).</p>
+<details class="info">
+<summary>Click here to see the script</summary>
+<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">slurm_run_ocnA0_wrap.bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-25-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-25-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-25-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-25-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-25-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-25-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-25-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-25-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-25-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-25-10">10</a></span>
+<span class="normal"><a href="#__codelineno-25-11">11</a></span>
+<span class="normal"><a href="#__codelineno-25-12">12</a></span>
+<span class="normal"><a href="#__codelineno-25-13">13</a></span>
+<span class="normal"><a href="#__codelineno-25-14">14</a></span>
+<span class="normal"><a href="#__codelineno-25-15">15</a></span>
+<span class="normal"><a href="#__codelineno-25-16">16</a></span>
+<span class="normal"><a href="#__codelineno-25-17">17</a></span>
+<span class="normal"><a href="#__codelineno-25-18">18</a></span>
+<span class="normal"><a href="#__codelineno-25-19">19</a></span>
+<span class="normal"><a href="#__codelineno-25-20">20</a></span>
+<span class="normal"><a href="#__codelineno-25-21">21</a></span>
+<span class="normal"><a href="#__codelineno-25-22">22</a></span>
+<span class="normal"><a href="#__codelineno-25-23">23</a></span>
+<span class="normal"><a href="#__codelineno-25-24">24</a></span>
+<span class="normal"><a href="#__codelineno-25-25">25</a></span>
+<span class="normal"><a href="#__codelineno-25-26">26</a></span>
+<span class="normal"><a href="#__codelineno-25-27">27</a></span>
+<span class="normal"><a href="#__codelineno-25-28">28</a></span>
+<span class="normal"><a href="#__codelineno-25-29">29</a></span>
+<span class="normal"><a href="#__codelineno-25-30">30</a></span>
+<span class="normal"><a href="#__codelineno-25-31">31</a></span>
+<span class="normal"><a href="#__codelineno-25-32">32</a></span>
+<span class="normal"><a href="#__codelineno-25-33">33</a></span>
+<span class="normal"><a href="#__codelineno-25-34">34</a></span>
+<span class="normal"><a href="#__codelineno-25-35">35</a></span>
+<span class="normal"><a href="#__codelineno-25-36">36</a></span>
+<span class="normal"><a href="#__codelineno-25-37">37</a></span>
+<span class="normal"><a href="#__codelineno-25-38">38</a></span>
+<span class="normal"><a href="#__codelineno-25-39">39</a></span>
+<span class="normal"><a href="#__codelineno-25-40">40</a></span>
+<span class="normal"><a href="#__codelineno-25-41">41</a></span>
+<span class="normal"><a href="#__codelineno-25-42">42</a></span>
+<span class="normal"><a href="#__codelineno-25-43">43</a></span>
+<span class="normal"><a href="#__codelineno-25-44">44</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-25-1"><a id="__codelineno-25-1" name="__codelineno-25-1"></a><span class="ch">#!/bin/bash</span>
+</span><span id="__span-25-2"><a id="__codelineno-25-2" name="__codelineno-25-2"></a><span class="c1">#SBATCH --job-name=forcing_parallel</span>
+</span><span id="__span-25-3"><a id="__codelineno-25-3" name="__codelineno-25-3"></a><span class="c1">#SBATCH --nodes=1</span>
+</span><span id="__span-25-4"><a id="__codelineno-25-4" name="__codelineno-25-4"></a><span class="c1">#SBATCH --ntasks=1</span>
+</span><span id="__span-25-5"><a id="__codelineno-25-5" name="__codelineno-25-5"></a><span class="c1">#SBATCH --cpus-per-task=4     # number of parallel jobs allowed</span>
+</span><span id="__span-25-6"><a id="__codelineno-25-6" name="__codelineno-25-6"></a><span class="c1">#SBATCH --time=01:00:00</span>
+</span><span id="__span-25-7"><a id="__codelineno-25-7" name="__codelineno-25-7"></a><span class="c1">#SBATCH --partition=HDCAST</span>
+</span><span id="__span-25-8"><a id="__codelineno-25-8" name="__codelineno-25-8"></a><span class="c1">#SBATCH --output=forcing_parallel_%j.out</span>
+</span><span id="__span-25-9"><a id="__codelineno-25-9" name="__codelineno-25-9"></a>
+</span><span id="__span-25-10"><a id="__codelineno-25-10" name="__codelineno-25-10"></a><span class="nb">source</span><span class="w"> </span>~/.bashrc
+</span><span id="__span-25-11"><a id="__codelineno-25-11" name="__codelineno-25-11"></a><span class="nb">source</span><span class="w"> </span>/home/cawohdcst_ft2/opt/miniforge3/etc/profile.d/conda.sh
+</span><span id="__span-25-12"><a id="__codelineno-25-12" name="__codelineno-25-12"></a>conda<span class="w"> </span>activate<span class="w"> </span>loenv
+</span><span id="__span-25-13"><a id="__codelineno-25-13" name="__codelineno-25-13"></a>
+</span><span id="__span-25-14"><a id="__codelineno-25-14" name="__codelineno-25-14"></a><span class="c1"># =========================</span>
+</span><span id="__span-25-15"><a id="__codelineno-25-15" name="__codelineno-25-15"></a><span class="c1"># INIT DAY (new)</span>
+</span><span id="__span-25-16"><a id="__codelineno-25-16" name="__codelineno-25-16"></a><span class="c1"># =========================</span>
+</span><span id="__span-25-17"><a id="__codelineno-25-17" name="__codelineno-25-17"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Running initialization day&quot;</span>
+</span><span id="__span-25-18"><a id="__codelineno-25-18" name="__codelineno-25-18"></a><span class="hll">python<span class="w"> </span>driver_forcing3.py<span class="w"> </span>-g<span class="w"> </span>cawo<span class="w"> </span>-0<span class="w"> </span><span class="s2">&quot;1995.01.01&quot;</span><span class="w"> </span>-s<span class="w"> </span><span class="s2">&quot;new&quot;</span><span class="w"> </span>-f<span class="w"> </span>ocnA0
+</span></span><span id="__span-25-19"><a id="__codelineno-25-19" name="__codelineno-25-19"></a>
+</span><span id="__span-25-20"><a id="__codelineno-25-20" name="__codelineno-25-20"></a><span class="c1"># =========================</span>
+</span><span id="__span-25-21"><a id="__codelineno-25-21" name="__codelineno-25-21"></a><span class="c1"># DATE RANGE</span>
+</span><span id="__span-25-22"><a id="__codelineno-25-22" name="__codelineno-25-22"></a><span class="c1"># =========================</span>
+</span><span id="__span-25-23"><a id="__codelineno-25-23" name="__codelineno-25-23"></a><span class="hll"><span class="nv">start_date</span><span class="o">=</span><span class="s2">&quot;1995-01-02&quot;</span>
+</span></span><span id="__span-25-24"><a id="__codelineno-25-24" name="__codelineno-25-24"></a><span class="hll"><span class="nv">end_date</span><span class="o">=</span><span class="s2">&quot;1995-01-05&quot;</span>
+</span></span><span id="__span-25-25"><a id="__codelineno-25-25" name="__codelineno-25-25"></a><span class="nv">current_date</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$start_date</span><span class="s2">&quot;</span>
+</span><span id="__span-25-26"><a id="__codelineno-25-26" name="__codelineno-25-26"></a><span class="nv">MAX_PARALLEL</span><span class="o">=</span><span class="m">16</span><span class="w">   </span><span class="c1"># limit parallel processes</span>
+</span><span id="__span-25-27"><a id="__codelineno-25-27" name="__codelineno-25-27"></a><span class="nv">job_count</span><span class="o">=</span><span class="m">0</span>
+</span><span id="__span-25-28"><a id="__codelineno-25-28" name="__codelineno-25-28"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Launching parallel forcing jobs...&quot;</span>
+</span><span id="__span-25-29"><a id="__codelineno-25-29" name="__codelineno-25-29"></a><span class="k">while</span><span class="w"> </span><span class="o">[[</span><span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>date<span class="w"> </span>-d<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$current_date</span><span class="s2">&quot;</span><span class="w"> </span>+%s<span class="k">)</span><span class="s2">&quot;</span><span class="w"> </span>-le<span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>date<span class="w"> </span>-d<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$end_date</span><span class="s2">&quot;</span><span class="w"> </span>+%s<span class="k">)</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">]]</span>
+</span><span id="__span-25-30"><a id="__codelineno-25-30" name="__codelineno-25-30"></a><span class="k">do</span>
+</span><span id="__span-25-31"><a id="__codelineno-25-31" name="__codelineno-25-31"></a><span class="w">    </span><span class="nv">formatted_date</span><span class="o">=</span><span class="k">$(</span>date<span class="w"> </span>-d<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$current_date</span><span class="s2">&quot;</span><span class="w"> </span>+%Y.%m.%d<span class="k">)</span>
+</span><span id="__span-25-32"><a id="__codelineno-25-32" name="__codelineno-25-32"></a><span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Launching forcing for </span><span class="nv">$formatted_date</span><span class="s2">&quot;</span>
+</span><span id="__span-25-33"><a id="__codelineno-25-33" name="__codelineno-25-33"></a><span class="w">    </span>python<span class="w"> </span>driver_forcing3.py<span class="w"> </span>-g<span class="w"> </span>cawo<span class="w"> </span>-0<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$formatted_date</span><span class="s2">&quot;</span><span class="w"> </span>-f<span class="w"> </span>ocnA0<span class="w"> </span><span class="p">&amp;</span>
+</span><span id="__span-25-34"><a id="__codelineno-25-34" name="__codelineno-25-34"></a><span class="w">    </span><span class="o">((</span>job_count++<span class="o">))</span>
+</span><span id="__span-25-35"><a id="__codelineno-25-35" name="__codelineno-25-35"></a><span class="w">    </span><span class="c1"># limit parallel jobs</span>
+</span><span id="__span-25-36"><a id="__codelineno-25-36" name="__codelineno-25-36"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="o">((</span><span class="w"> </span>job_count<span class="w"> </span>&gt;<span class="o">=</span><span class="w"> </span>MAX_PARALLEL<span class="w"> </span><span class="o">))</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
+</span><span id="__span-25-37"><a id="__codelineno-25-37" name="__codelineno-25-37"></a><span class="w">        </span><span class="nb">wait</span><span class="w">   </span><span class="c1"># wait for all background jobs</span>
+</span><span id="__span-25-38"><a id="__codelineno-25-38" name="__codelineno-25-38"></a><span class="w">        </span><span class="nv">job_count</span><span class="o">=</span><span class="m">0</span>
+</span><span id="__span-25-39"><a id="__codelineno-25-39" name="__codelineno-25-39"></a><span class="w">    </span><span class="k">fi</span>
+</span><span id="__span-25-40"><a id="__codelineno-25-40" name="__codelineno-25-40"></a><span class="w">    </span><span class="nv">current_date</span><span class="o">=</span><span class="k">$(</span>date<span class="w"> </span>-d<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$current_date</span><span class="s2"> + 1 day&quot;</span><span class="w"> </span>+%Y-%m-%d<span class="k">)</span>
+</span><span id="__span-25-41"><a id="__codelineno-25-41" name="__codelineno-25-41"></a><span class="k">done</span>
+</span><span id="__span-25-42"><a id="__codelineno-25-42" name="__codelineno-25-42"></a><span class="c1"># wait for remaining jobs</span>
+</span><span id="__span-25-43"><a id="__codelineno-25-43" name="__codelineno-25-43"></a><span class="nb">wait</span>
+</span><span id="__span-25-44"><a id="__codelineno-25-44" name="__codelineno-25-44"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;All forcing jobs completed.&quot;</span>
+</span></code></pre></div></td></tr></table></div>
+</details>
+<p>Launch the script.
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-26-1"><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a>sbatch<span class="w"> </span>slurm_run_ocnA0_wrap.bash
+</span></code></pre></div></p>
+<p>The script generates ic/bc for ROMS stored in the following directory pattern <code>/scratch/cawohdcst_ft2/data/roms_forcing/fYYYYMMDD/ocnA0/</code>. Noted that the day 1 also consists <code>ocean_ini.nc</code> file as an initial conditions.
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-27-1"><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a><span class="o">[</span>cawohdcst_ft2@mdclogin1<span class="w"> </span>get_roms_icbc<span class="o">]</span>$<span class="w"> </span>ls<span class="w"> </span>/scratch/cawohdcst_ft2/data/roms_forcing/f19950101/ocnA0/<span class="w"> </span>-lth
+</span><span id="__span-27-2"><a id="__codelineno-27-2" name="__codelineno-27-2" href="#__codelineno-27-2"></a>total<span class="w"> </span>252M
+</span><span id="__span-27-3"><a id="__codelineno-27-3" name="__codelineno-27-3" href="#__codelineno-27-3"></a>-rw-r--r--.<span class="w"> </span><span class="m">1</span><span class="w"> </span>cawohdcst_ft2<span class="w"> </span>cls_ext<span class="w"> </span>262K<span class="w"> </span>Jan<span class="w"> </span><span class="m">23</span><span class="w"> </span><span class="m">16</span>:01<span class="w"> </span>ocean_bry.nc
+</span><span id="__span-27-4"><a id="__codelineno-27-4" name="__codelineno-27-4" href="#__codelineno-27-4"></a>-rw-r--r--.<span class="w"> </span><span class="m">1</span><span class="w"> </span>cawohdcst_ft2<span class="w"> </span>cls_ext<span class="w"> </span>126M<span class="w"> </span>Jan<span class="w"> </span><span class="m">23</span><span class="w"> </span><span class="m">16</span>:01<span class="w"> </span>ocean_ini.nc
+</span><span id="__span-27-5"><a id="__codelineno-27-5" name="__codelineno-27-5" href="#__codelineno-27-5"></a>-rw-r--r--.<span class="w"> </span><span class="m">1</span><span class="w"> </span>cawohdcst_ft2<span class="w"> </span>cls_ext<span class="w"> </span>126M<span class="w"> </span>Jan<span class="w"> </span><span class="m">23</span><span class="w"> </span><span class="m">16</span>:00<span class="w"> </span>ocean_clm.nc
+</span><span id="__span-27-6"><a id="__codelineno-27-6" name="__codelineno-27-6" href="#__codelineno-27-6"></a>drwxrwxr-x.<span class="w"> </span><span class="m">2</span><span class="w"> </span>cawohdcst_ft2<span class="w"> </span>cls_ext<span class="w"> </span><span class="m">4</span>.0K<span class="w"> </span>Dec<span class="w"> </span><span class="m">15</span><span class="w"> </span><span class="m">19</span>:22<span class="w"> </span>Data
+</span><span id="__span-27-7"><a id="__codelineno-27-7" name="__codelineno-27-7" href="#__codelineno-27-7"></a>drwxrwxr-x.<span class="w"> </span><span class="m">2</span><span class="w"> </span>cawohdcst_ft2<span class="w"> </span>cls_ext<span class="w"> </span><span class="m">4</span>.0K<span class="w"> </span>Dec<span class="w"> </span><span class="m">15</span><span class="w"> </span><span class="m">19</span>:22<span class="w"> </span>Info
+</span><span id="__span-27-8"><a id="__codelineno-27-8" name="__codelineno-27-8" href="#__codelineno-27-8"></a><span class="o">(</span>loenv<span class="o">)</span><span class="w"> </span><span class="o">[</span>cawohdcst_ft2@mdclogin1<span class="w"> </span>get_roms_icbc<span class="o">]</span>$<span class="w"> </span>ls<span class="w"> </span>/scratch/cawohdcst_ft2/data/roms_forcing/f19950102/ocnA0/<span class="w"> </span>-lth
+</span><span id="__span-27-9"><a id="__codelineno-27-9" name="__codelineno-27-9" href="#__codelineno-27-9"></a>total<span class="w"> </span>126M
+</span><span id="__span-27-10"><a id="__codelineno-27-10" name="__codelineno-27-10" href="#__codelineno-27-10"></a>-rw-r--r--.<span class="w"> </span><span class="m">1</span><span class="w"> </span>cawohdcst_ft2<span class="w"> </span>cls_ext<span class="w"> </span>262K<span class="w"> </span>Jan<span class="w"> </span><span class="m">23</span><span class="w"> </span><span class="m">16</span>:02<span class="w"> </span>ocean_bry.nc
+</span><span id="__span-27-11"><a id="__codelineno-27-11" name="__codelineno-27-11" href="#__codelineno-27-11"></a>-rw-r--r--.<span class="w"> </span><span class="m">1</span><span class="w"> </span>cawohdcst_ft2<span class="w"> </span>cls_ext<span class="w"> </span>126M<span class="w"> </span>Jan<span class="w"> </span><span class="m">23</span><span class="w"> </span><span class="m">16</span>:02<span class="w"> </span>ocean_clm.nc
+</span><span id="__span-27-12"><a id="__codelineno-27-12" name="__codelineno-27-12" href="#__codelineno-27-12"></a>drwxr-xr-x.<span class="w"> </span><span class="m">2</span><span class="w"> </span>cawohdcst_ft2<span class="w"> </span>cls_ext<span class="w"> </span><span class="m">4</span>.0K<span class="w"> </span>Dec<span class="w"> </span><span class="m">16</span><span class="w"> </span><span class="m">13</span>:29<span class="w"> </span>Data
+</span><span id="__span-27-13"><a id="__codelineno-27-13" name="__codelineno-27-13" href="#__codelineno-27-13"></a>drwxr-xr-x.<span class="w"> </span><span class="m">2</span><span class="w"> </span>cawohdcst_ft2<span class="w"> </span>cls_ext<span class="w"> </span><span class="m">4</span>.0K<span class="w"> </span>Dec<span class="w"> </span><span class="m">16</span><span class="w"> </span><span class="m">13</span>:29<span class="w"> </span>Info
+</span></code></pre></div></p>
+<details class="success">
+<summary>Click here to view the execution log.</summary>
+<div class="language-text highlight"><span class="filename">log_ocnA0_<jobid>.log</span><pre><span></span><code><span id="__span-28-1"><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a>Running initialization day
+</span><span id="__span-28-2"><a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a>dt0, dt1 1995-01-01 00:00:00 1995-01-01 00:00:00
+</span><span id="__span-28-3"><a id="__codelineno-28-3" name="__codelineno-28-3" href="#__codelineno-28-3"></a>------Forcing: ocnA0, backfill, 1995.01.01-1995.01.01 ------
+</span><span id="__span-28-4"><a id="__codelineno-28-4" name="__codelineno-28-4" href="#__codelineno-28-4"></a>* frc=ocnA0, day=1995.01.01, result=success, note=NONE
+</span><span id="__span-28-5"><a id="__codelineno-28-5" name="__codelineno-28-5" href="#__codelineno-28-5"></a>start=2026.01.23 10:30:23 (took 360 sec)
+</span><span id="__span-28-6"><a id="__codelineno-28-6" name="__codelineno-28-6" href="#__codelineno-28-6"></a>/home/cawohdcst_ft2/LO_output/forcing/cawo/f1995.01.01/ocnA0
+</span><span id="__span-28-7"><a id="__codelineno-28-7" name="__codelineno-28-7" href="#__codelineno-28-7"></a>
+</span><span id="__span-28-8"><a id="__codelineno-28-8" name="__codelineno-28-8" href="#__codelineno-28-8"></a>Launching parallel forcing jobs...
+</span><span id="__span-28-9"><a id="__codelineno-28-9" name="__codelineno-28-9" href="#__codelineno-28-9"></a>Launching forcing for 1995.01.02
+</span><span id="__span-28-10"><a id="__codelineno-28-10" name="__codelineno-28-10" href="#__codelineno-28-10"></a>Launching forcing for 1995.01.03
+</span><span id="__span-28-11"><a id="__codelineno-28-11" name="__codelineno-28-11" href="#__codelineno-28-11"></a>Launching forcing for 1995.01.04
+</span><span id="__span-28-12"><a id="__codelineno-28-12" name="__codelineno-28-12" href="#__codelineno-28-12"></a>Launching forcing for 1995.01.05
+</span><span id="__span-28-13"><a id="__codelineno-28-13" name="__codelineno-28-13" href="#__codelineno-28-13"></a>dt0, dt1 1995-01-03 00:00:00 1995-01-03 00:00:00
+</span><span id="__span-28-14"><a id="__codelineno-28-14" name="__codelineno-28-14" href="#__codelineno-28-14"></a>------Forcing: ocnA0, backfill, 1995.01.03-1995.01.03 ------
+</span><span id="__span-28-15"><a id="__codelineno-28-15" name="__codelineno-28-15" href="#__codelineno-28-15"></a>* frc=ocnA0, day=1995.01.03, result=success, note=NONE
+</span><span id="__span-28-16"><a id="__codelineno-28-16" name="__codelineno-28-16" href="#__codelineno-28-16"></a>start=2026.01.23 10:36:30 (took 129 sec)
+</span><span id="__span-28-17"><a id="__codelineno-28-17" name="__codelineno-28-17" href="#__codelineno-28-17"></a>/home/cawohdcst_ft2/LO_output/forcing/cawo/f1995.01.03/ocnA0
+</span><span id="__span-28-18"><a id="__codelineno-28-18" name="__codelineno-28-18" href="#__codelineno-28-18"></a>
+</span><span id="__span-28-19"><a id="__codelineno-28-19" name="__codelineno-28-19" href="#__codelineno-28-19"></a>dt0, dt1 1995-01-05 00:00:00 1995-01-05 00:00:00
+</span><span id="__span-28-20"><a id="__codelineno-28-20" name="__codelineno-28-20" href="#__codelineno-28-20"></a>------Forcing: ocnA0, backfill, 1995.01.05-1995.01.05 ------
+</span><span id="__span-28-21"><a id="__codelineno-28-21" name="__codelineno-28-21" href="#__codelineno-28-21"></a>* frc=ocnA0, day=1995.01.05, result=success, note=NONE
+</span><span id="__span-28-22"><a id="__codelineno-28-22" name="__codelineno-28-22" href="#__codelineno-28-22"></a>start=2026.01.23 10:36:30 (took 130 sec)
+</span><span id="__span-28-23"><a id="__codelineno-28-23" name="__codelineno-28-23" href="#__codelineno-28-23"></a>/home/cawohdcst_ft2/LO_output/forcing/cawo/f1995.01.05/ocnA0
+</span><span id="__span-28-24"><a id="__codelineno-28-24" name="__codelineno-28-24" href="#__codelineno-28-24"></a>
+</span><span id="__span-28-25"><a id="__codelineno-28-25" name="__codelineno-28-25" href="#__codelineno-28-25"></a>dt0, dt1 1995-01-02 00:00:00 1995-01-02 00:00:00
+</span><span id="__span-28-26"><a id="__codelineno-28-26" name="__codelineno-28-26" href="#__codelineno-28-26"></a>------Forcing: ocnA0, backfill, 1995.01.02-1995.01.02 ------
+</span><span id="__span-28-27"><a id="__codelineno-28-27" name="__codelineno-28-27" href="#__codelineno-28-27"></a>* frc=ocnA0, day=1995.01.02, result=success, note=NONE
+</span><span id="__span-28-28"><a id="__codelineno-28-28" name="__codelineno-28-28" href="#__codelineno-28-28"></a>start=2026.01.23 10:36:30 (took 130 sec)
+</span><span id="__span-28-29"><a id="__codelineno-28-29" name="__codelineno-28-29" href="#__codelineno-28-29"></a>/home/cawohdcst_ft2/LO_output/forcing/cawo/f1995.01.02/ocnA0
+</span><span id="__span-28-30"><a id="__codelineno-28-30" name="__codelineno-28-30" href="#__codelineno-28-30"></a>
+</span><span id="__span-28-31"><a id="__codelineno-28-31" name="__codelineno-28-31" href="#__codelineno-28-31"></a>dt0, dt1 1995-01-04 00:00:00 1995-01-04 00:00:00
+</span><span id="__span-28-32"><a id="__codelineno-28-32" name="__codelineno-28-32" href="#__codelineno-28-32"></a>------Forcing: ocnA0, backfill, 1995.01.04-1995.01.04 ------
+</span><span id="__span-28-33"><a id="__codelineno-28-33" name="__codelineno-28-33" href="#__codelineno-28-33"></a>* frc=ocnA0, day=1995.01.04, result=success, note=NONE
+</span><span id="__span-28-34"><a id="__codelineno-28-34" name="__codelineno-28-34" href="#__codelineno-28-34"></a>start=2026.01.23 10:36:30 (took 131 sec)
+</span><span id="__span-28-35"><a id="__codelineno-28-35" name="__codelineno-28-35" href="#__codelineno-28-35"></a>/home/cawohdcst_ft2/LO_output/forcing/cawo/f1995.01.04/ocnA0
+</span><span id="__span-28-36"><a id="__codelineno-28-36" name="__codelineno-28-36" href="#__codelineno-28-36"></a>
+</span><span id="__span-28-37"><a id="__codelineno-28-37" name="__codelineno-28-37" href="#__codelineno-28-37"></a>All forcing jobs completed.
+</span></code></pre></div>
+</details>
+<h4 id="2-populate-templates-for-icbc">2 Populate templates for ic/bc<a class="headerlink" href="#2-populate-templates-for-icbc" title="Permanent link">&para;</a></h4>
+<p><code>/home/cawohdcst_ft2/tyo/preprocess/get_roms_icbc/slurm_run_ocnGcawo_parallel_v3.bash</code> – driver script for generating the ROMS forcing files;</p>
+<p>Launch the script.
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-29-1"><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a>sbatch<span class="w"> </span>slurm_run_ocnGcawo_parallel_v3.bash
+</span></code></pre></div>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-30-1"><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a><span class="o">[</span>cawohdcst_ft2@mdclogin1<span class="w"> </span>get_roms_icbc<span class="o">]</span>$<span class="w"> </span>ls<span class="w"> </span>/scratch/cawohdcst_ft2/data/roms_forcing/f19950101/ocnG/<span class="w"> </span>-lth
+</span><span id="__span-30-2"><a id="__codelineno-30-2" name="__codelineno-30-2" href="#__codelineno-30-2"></a>total<span class="w"> </span><span class="m">6</span>.3G
+</span><span id="__span-30-3"><a id="__codelineno-30-3" name="__codelineno-30-3" href="#__codelineno-30-3"></a>-rwxrwxr-x.<span class="w"> </span><span class="m">1</span><span class="w"> </span>cawohdcst_ft2<span class="w"> </span>cls_ext<span class="w"> </span><span class="m">8</span>.8M<span class="w"> </span>Jan<span class="w"> </span><span class="m">23</span><span class="w"> </span><span class="m">16</span>:53<span class="w"> </span>ocean_bry.nc
+</span><span id="__span-30-4"><a id="__codelineno-30-4" name="__codelineno-30-4" href="#__codelineno-30-4"></a>-rwxrwxr-x.<span class="w"> </span><span class="m">1</span><span class="w"> </span>cawohdcst_ft2<span class="w"> </span>cls_ext<span class="w"> </span><span class="m">3</span>.2G<span class="w"> </span>Jan<span class="w"> </span><span class="m">23</span><span class="w"> </span><span class="m">16</span>:53<span class="w"> </span>ocean_clm.nc
+</span><span id="__span-30-5"><a id="__codelineno-30-5" name="__codelineno-30-5" href="#__codelineno-30-5"></a>-rwxrwxr-x.<span class="w"> </span><span class="m">1</span><span class="w"> </span>cawohdcst_ft2<span class="w"> </span>cls_ext<span class="w"> </span><span class="m">3</span>.2G<span class="w"> </span>Dec<span class="w"> </span><span class="m">16</span><span class="w"> </span><span class="m">09</span>:04<span class="w"> </span>ocean_ini.nc
+</span><span id="__span-30-6"><a id="__codelineno-30-6" name="__codelineno-30-6" href="#__codelineno-30-6"></a><span class="o">[</span>cawohdcst_ft2@mdclogin1<span class="w"> </span>get_roms_icbc<span class="o">]</span>$<span class="w"> </span>ls<span class="w"> </span>/scratch/cawohdcst_ft2/data/roms_forcing/f19950102/ocnG/<span class="w"> </span>-lth
+</span><span id="__span-30-7"><a id="__codelineno-30-7" name="__codelineno-30-7" href="#__codelineno-30-7"></a>total<span class="w"> </span><span class="m">3</span>.2G
+</span><span id="__span-30-8"><a id="__codelineno-30-8" name="__codelineno-30-8" href="#__codelineno-30-8"></a>-rw-r--r--.<span class="w"> </span><span class="m">1</span><span class="w"> </span>cawohdcst_ft2<span class="w"> </span>cls_ext<span class="w"> </span><span class="m">8</span>.8M<span class="w"> </span>Jan<span class="w"> </span><span class="m">23</span><span class="w"> </span><span class="m">16</span>:53<span class="w"> </span>ocean_bry.nc
+</span><span id="__span-30-9"><a id="__codelineno-30-9" name="__codelineno-30-9" href="#__codelineno-30-9"></a>-rw-r--r--.<span class="w"> </span><span class="m">1</span><span class="w"> </span>cawohdcst_ft2<span class="w"> </span>cls_ext<span class="w"> </span><span class="m">3</span>.2G<span class="w"> </span>Jan<span class="w"> </span><span class="m">23</span><span class="w"> </span><span class="m">16</span>:53<span class="w"> </span>ocean_clm.nc
+</span><span id="__span-30-10"><a id="__codelineno-30-10" name="__codelineno-30-10" href="#__codelineno-30-10"></a><span class="o">[</span>cawohdcst_ft2@mdclogin1<span class="w"> </span>get_roms_icbc<span class="o">]</span>$<span class="w"> </span>
+</span></code></pre></div></p>
+<details class="success">
+<summary>Click here to view the execution log.</summary>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-31-1"><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a>...
+</span><span id="__span-31-2"><a id="__codelineno-31-2" name="__codelineno-31-2" href="#__codelineno-31-2"></a>...
+</span><span id="__span-31-3"><a id="__codelineno-31-3" name="__codelineno-31-3" href="#__codelineno-31-3"></a>...
+</span><span id="__span-31-4"><a id="__codelineno-31-4" name="__codelineno-31-4" href="#__codelineno-31-4"></a>47
+</span><span id="__span-31-5"><a id="__codelineno-31-5" name="__codelineno-31-5" href="#__codelineno-31-5"></a>48
+</span><span id="__span-31-6"><a id="__codelineno-31-6" name="__codelineno-31-6" href="#__codelineno-31-6"></a>49
+</span><span id="__span-31-7"><a id="__codelineno-31-7" name="__codelineno-31-7" href="#__codelineno-31-7"></a>Vertical interpolation
+</span><span id="__span-31-8"><a id="__codelineno-31-8" name="__codelineno-31-8" href="#__codelineno-31-8"></a>Vertical interpolation
+</span><span id="__span-31-9"><a id="__codelineno-31-9" name="__codelineno-31-9" href="#__codelineno-31-9"></a>Vertical interpolation
+</span><span id="__span-31-10"><a id="__codelineno-31-10" name="__codelineno-31-10" href="#__codelineno-31-10"></a>Vertical interpolation
+</span><span id="__span-31-11"><a id="__codelineno-31-11" name="__codelineno-31-11" href="#__codelineno-31-11"></a>Finished 1995-01-01
+</span></code></pre></div>
+</details>
+<h2 id="running-the-hindcast">Running the Hindcast<a class="headerlink" href="#running-the-hindcast" title="Permanent link">&para;</a></h2>
+<p>Once the data are properly pre-processed for the selected period, we are ready to run the hindcast. This section describes the steps required to compile the model, prepare the input folders (grid, configuration files, and forcing files), and set up the output directories. After completing these steps, the model can be executed and the results will be available for the post-processing stage.</p>
+<h3 id="compiling-coawst">Compiling COAWST<a class="headerlink" href="#compiling-coawst" title="Permanent link">&para;</a></h3>
+<p>The model code used to run the hindcast is placed at:</p>
+<ul>
+<li><code>/home/cawohdcst_ft2/models/cawo_3way_swell_mods_ramp_tides/</code> for day 1 </li>
+<li><code>/home/cawohdcst_ft2/models/cawo_3way_swell_mods_no_ramp_tides/</code> for after day 1</li>
+</ul>
+<p>There are some varibles need to be changed related to the path inside <code>coawst.bash</code>. Additionally, the different configurations on the ramp tides usage is adjusted in the <code>Projects/CAWO_3way/cawo_3way.h</code>. But, in this case, you don't need to worry as it has been done during the FT. So, all you need to do is to compile the Coawst model for each scenario to get the binary <code>coawstM</code>. Here is the command to compile the model.</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-32-1"><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a>sbatch<span class="w"> </span>slurm_compile_cawo.bash
+</span></code></pre></div>
+<h3 id="running-scheme">Running Scheme<a class="headerlink" href="#running-scheme" title="Permanent link">&para;</a></h3>
+<p>The runs are being conducted at your designed directory which defined in <code>env.sh</code>. In this example, they're located at <code>/scratch/cawohdcst_ft2/tyo/cawo_hindcast/cawo_hindcast_run</code> and its outputs are directed to <code>/scratch/cawohdcst_ft2/tyo/cawo_hindcast/cawo_output</code>. </p>
+<p>However, the working directory where we launch the source code still from <code>home</code> directory, e.g. <code>/home/cawohdcst_ft2/tyo/hindcast_run</code>. The <code>scratch</code> folder is used for I/O purposes.</p>
+<p>The hindcast is run in separate daily cycles. A folder for each cycle should be created by using the follwing script:
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-33-1"><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a>python<span class="w"> </span>create_folders.py
+</span></code></pre></div></p>
+<h3 id="modifying-namelist-files">Modifying Namelist Files<a class="headerlink" href="#modifying-namelist-files" title="Permanent link">&para;</a></h3>
+<p>The following scripts will modify the namelist files required by the three models according to each daily cycle/run directory. To modify the namelist files according to the respective days run:</p>
+<p>Modifying day1
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-34-1"><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a><span class="o">(</span>base<span class="o">)</span><span class="w"> </span>sh-4.4$<span class="w"> </span>python<span class="w"> </span>modify_dot_in.py<span class="w"> </span><span class="m">19950101</span><span class="w">  </span><span class="m">19950101</span><span class="w"> </span>--day1
+</span><span id="__span-34-2"><a id="__codelineno-34-2" name="__codelineno-34-2" href="#__codelineno-34-2"></a>Start<span class="w"> </span>date:<span class="w"> </span><span class="m">19950101</span>
+</span><span id="__span-34-3"><a id="__codelineno-34-3" name="__codelineno-34-3" href="#__codelineno-34-3"></a>End<span class="w"> </span>date<span class="w">  </span>:<span class="w"> </span><span class="m">19950101</span>
+</span><span id="__span-34-4"><a id="__codelineno-34-4" name="__codelineno-34-4" href="#__codelineno-34-4"></a>Day1<span class="w"> </span>mode<span class="w"> </span>:<span class="w"> </span>True
+</span><span id="__span-34-5"><a id="__codelineno-34-5" name="__codelineno-34-5" href="#__codelineno-34-5"></a>Models<span class="w">   </span>:<span class="w"> </span>roms,<span class="w"> </span>swan,<span class="w"> </span>wrf
+</span><span id="__span-34-6"><a id="__codelineno-34-6" name="__codelineno-34-6" href="#__codelineno-34-6"></a>--------------------------------------------------
+</span><span id="__span-34-7"><a id="__codelineno-34-7" name="__codelineno-34-7" href="#__codelineno-34-7"></a><span class="o">===</span><span class="w"> </span>Modifying<span class="w"> </span>ROMS<span class="w"> </span>input<span class="w"> </span><span class="nv">files</span><span class="w"> </span><span class="o">===</span>
+</span><span id="__span-34-8"><a id="__codelineno-34-8" name="__codelineno-34-8" href="#__codelineno-34-8"></a><span class="o">===</span><span class="w"> </span>Modifying<span class="w"> </span>SWAN<span class="w"> </span>input<span class="w"> </span><span class="nv">files</span><span class="w"> </span><span class="o">===</span>
+</span><span id="__span-34-9"><a id="__codelineno-34-9" name="__codelineno-34-9" href="#__codelineno-34-9"></a><span class="o">===</span><span class="w"> </span>Modifying<span class="w"> </span>WRF<span class="w"> </span>input<span class="w"> </span><span class="nv">files</span><span class="w"> </span><span class="o">===</span>
+</span><span id="__span-34-10"><a id="__codelineno-34-10" name="__codelineno-34-10" href="#__codelineno-34-10"></a>
+</span><span id="__span-34-11"><a id="__codelineno-34-11" name="__codelineno-34-11" href="#__codelineno-34-11"></a>All<span class="w"> </span>.in<span class="w"> </span>files<span class="w"> </span>updated<span class="w"> </span>successfully.
+</span></code></pre></div></p>
+<p>Non day1
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-35-1"><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a><span class="o">(</span>base<span class="o">)</span><span class="w"> </span>sh-4.4$<span class="w"> </span>python<span class="w"> </span>modify_dot_in.py<span class="w"> </span><span class="m">19950102</span><span class="w"> </span><span class="m">19950105</span>
+</span><span id="__span-35-2"><a id="__codelineno-35-2" name="__codelineno-35-2" href="#__codelineno-35-2"></a>Start<span class="w"> </span>date:<span class="w"> </span><span class="m">19950102</span>
+</span><span id="__span-35-3"><a id="__codelineno-35-3" name="__codelineno-35-3" href="#__codelineno-35-3"></a>End<span class="w"> </span>date<span class="w">  </span>:<span class="w"> </span><span class="m">19950105</span>
+</span><span id="__span-35-4"><a id="__codelineno-35-4" name="__codelineno-35-4" href="#__codelineno-35-4"></a>Day1<span class="w"> </span>mode<span class="w"> </span>:<span class="w"> </span>False
+</span><span id="__span-35-5"><a id="__codelineno-35-5" name="__codelineno-35-5" href="#__codelineno-35-5"></a>Models<span class="w">   </span>:<span class="w"> </span>roms,<span class="w"> </span>swan,<span class="w"> </span>wrf
+</span><span id="__span-35-6"><a id="__codelineno-35-6" name="__codelineno-35-6" href="#__codelineno-35-6"></a>--------------------------------------------------
+</span><span id="__span-35-7"><a id="__codelineno-35-7" name="__codelineno-35-7" href="#__codelineno-35-7"></a><span class="o">===</span><span class="w"> </span>Modifying<span class="w"> </span>ROMS<span class="w"> </span>input<span class="w"> </span><span class="nv">files</span><span class="w"> </span><span class="o">===</span>
+</span><span id="__span-35-8"><a id="__codelineno-35-8" name="__codelineno-35-8" href="#__codelineno-35-8"></a><span class="o">===</span><span class="w"> </span>Modifying<span class="w"> </span>SWAN<span class="w"> </span>input<span class="w"> </span><span class="nv">files</span><span class="w"> </span><span class="o">===</span>
+</span><span id="__span-35-9"><a id="__codelineno-35-9" name="__codelineno-35-9" href="#__codelineno-35-9"></a><span class="o">===</span><span class="w"> </span>Modifying<span class="w"> </span>WRF<span class="w"> </span>input<span class="w"> </span><span class="nv">files</span><span class="w"> </span><span class="o">===</span>
+</span><span id="__span-35-10"><a id="__codelineno-35-10" name="__codelineno-35-10" href="#__codelineno-35-10"></a>
+</span><span id="__span-35-11"><a id="__codelineno-35-11" name="__codelineno-35-11" href="#__codelineno-35-11"></a>All<span class="w"> </span>.in<span class="w"> </span>files<span class="w"> </span>updated<span class="w"> </span>successfully.
+</span></code></pre></div></p>
+<h3 id="copying-input-files">Copying input files<a class="headerlink" href="#copying-input-files" title="Permanent link">&para;</a></h3>
+<p>The following script will copy the files that are needed into the daily run directories. These files include the WRF forcing files generated with WPS, coawstM executable, slurm script and others. </p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-36-1"><a id="__codelineno-36-1" name="__codelineno-36-1" href="#__codelineno-36-1"></a>./copy_files_for_run_day1.bash<span class="w"> </span><span class="c1"># for day1</span>
+</span><span id="__span-36-2"><a id="__codelineno-36-2" name="__codelineno-36-2" href="#__codelineno-36-2"></a>./copy_files_for_run.bash<span class="w"> </span><span class="c1"># after day1</span>
+</span></code></pre></div>
+<h3 id="running-a-day-cycle">Running a day cycle<a class="headerlink" href="#running-a-day-cycle" title="Permanent link">&para;</a></h3>
+<p>The hindcast is designed to run in daily cycles, at first it is recommended that at least two or three days be run individually. This helps the user to better understand the sequence before launching the automation script. 
+Enter your <code>scratch</code> directory for the day you want to run and run the following slurm script:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-37-1"><a id="__codelineno-37-1" name="__codelineno-37-1" href="#__codelineno-37-1"></a>sbatch<span class="w"> </span>slurm_run_cawo_3way_hdcst.bash
+</span></code></pre></div>
+<h3 id="running-automation">Running automation<a class="headerlink" href="#running-automation" title="Permanent link">&para;</a></h3>
+<p>As the 30 years hindcast is split into daily cycles, a driver script was designed to launch the sequential daily runs one after another. The bash script goes from a given start day to an end day. As a daily cycle is complete, the script advances to the next day and continues to do it until the final day is reached.
+To automatically run a sequence of days, run the following:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-38-1"><a id="__codelineno-38-1" name="__codelineno-38-1" href="#__codelineno-38-1"></a>nohup<span class="w"> </span>./run_hindcast.bash<span class="w"> </span><span class="p">&amp;</span>&gt;<span class="w"> </span>log/log_run.log<span class="w"> </span><span class="p">&amp;</span>
+</span></code></pre></div>
+<h2 id="post-processing">Post Processing<a class="headerlink" href="#post-processing" title="Permanent link">&para;</a></h2>
+<p>The raw outputs from WRF (surface and pressure levels) and ROMS/SWAN should be postprocessed to meet the clients requirements. The data needs to be CF compliant and store only the variables needed for surface (WRF 2D), pressure levels (WRF 3D), surface (ocean 2D), and z levels (ocean 3D).</p>
+<h3 id="wrf2d">WRF2D<a class="headerlink" href="#wrf2d" title="Permanent link">&para;</a></h3>
+<p>The raw outputs from WRF are remapped to the required regularly spaced latitude and longitude grid using the <a href="https://xesmf.readthedocs.io/en/stable/"><code>xesmf</code> toolbox</a>.
+The /home/cawohdcst/postprocess directory should be mirrored on your home directory:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-39-1"><a id="__codelineno-39-1" name="__codelineno-39-1" href="#__codelineno-39-1"></a>cp<span class="w"> </span>–r<span class="w"> </span>/scratch/cawohdcst_ft/home/cawohdcst/postprocess<span class="w"> </span>~/
+</span></code></pre></div>
+<p>Then edit and run the script below:
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-40-1"><a id="__codelineno-40-1" name="__codelineno-40-1" href="#__codelineno-40-1"></a>sbatch<span class="w"> </span>~/postprocess/slurm_run_post_wrf2d.bash
+</span></code></pre></div></p>
+<p>*Remember to adjust the paths related to your user and to choose the start and end dates for postprocessing.
+The postprocessed files will be placed on:
+<code>/scratch/&lt;your_user_name&gt;/data/postprocessed/wrf2d/fyyyymmdd</code></p>
+<h3 id="wrf3d">WRF3D<a class="headerlink" href="#wrf3d" title="Permanent link">&para;</a></h3>
+<p>Similarly to the WRF 2D, run the script bellow:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-41-1"><a id="__codelineno-41-1" name="__codelineno-41-1" href="#__codelineno-41-1"></a>sbatch<span class="w"> </span>~/postprocess/slurm_run_post_wrf3d.bash
+</span></code></pre></div>
+<p>The postprocessed files will be placed on:
+<code>/scratch/&lt;your_user_name&gt;/data/postprocessed/wrf3d/fyyyymmdd</code></p>
+<h3 id="ocean2d">Ocean2D<a class="headerlink" href="#ocean2d" title="Permanent link">&para;</a></h3>
+<p>Run: 
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-42-1"><a id="__codelineno-42-1" name="__codelineno-42-1" href="#__codelineno-42-1"></a>sbatch<span class="w"> </span>~/postprocess/slurm_run_post_ocean2d.bash
+</span></code></pre></div>
+The postprocessed files will be placed on:
+<code>/scratch/&lt;your_user_name&gt;/data/postprocessed/ocean2d/fyyyymmdd</code></p>
+<h3 id="ocean3d">Ocean3D<a class="headerlink" href="#ocean3d" title="Permanent link">&para;</a></h3>
+<p>Additionally to the <code>xesmf</code> remapping, the sigma layer outputs should be converted to z levels. For that task, the <a href="https://xroms.readthedocs.io/en/latest/"><code>xroms</code> package</a> is used.
+Run: 
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-43-1"><a id="__codelineno-43-1" name="__codelineno-43-1" href="#__codelineno-43-1"></a>sbatch<span class="w"> </span>~/postprocess/slurm_run_post_ocean3d.bash
+</span></code></pre></div>
+The postprocessed files will be placed on:
+<code>/scratch/&lt;your_user_name&gt;/data/postprocessed/ocean3d/fyyyymmdd</code>        </p>
+<h2 id="summary-and-common-problems">Summary and Common Problems<a class="headerlink" href="#summary-and-common-problems" title="Permanent link">&para;</a></h2>
+<p><em>work in progres</em></p>
 
 
 
