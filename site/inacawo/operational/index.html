@@ -668,6 +668,8 @@
       
         
       
+        
+      
     
     
     
@@ -798,6 +800,11 @@
                       
                     
                     
+                      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+                      <div class="md-sidebar-button__wrapper">
+                        <label class="md-sidebar-button" for="__toc"></label>
+                      </div>
+                    
                   
                   <div class="md-sidebar__inner">
                     
@@ -809,6 +816,86 @@
   
     
   
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#high-level-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        High-level workflow
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="High-level workflow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#processing-stages" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Processing stages
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#forecast-cycles" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Forecast cycles
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rome-accounts" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        ROME accounts
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sections" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Sections
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        References
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -923,7 +1010,121 @@
                   
 
 <h1 id="operational-flow">Operational Flow<a class="headerlink" href="#operational-flow" title="Permanent link">&para;</a></h1>
-<p><em>work in progress</em></p>
+<p>The InaCAWO operational forecast system is a fully automated pipeline managed by <strong>ROME</strong> (Baron Real-Time Operational Modeling Environment) on the BMKG HPC. Cron-scheduled job scripts orchestrate data ingest, pre-processing, model spin-up, analysis cycling, forecast runs, and post-processing.</p>
+<h2 id="high-level-workflow">High-level workflow<a class="headerlink" href="#high-level-workflow" title="Permanent link">&para;</a></h2>
+<pre class="mermaid"><code>flowchart LR
+    A[Global model data ingest] --&gt; B[Pre-processing IC/BC]
+    B --&gt; C[Model spin-up]
+    C --&gt; D[6-hourly analysis cycling]
+    D --&gt; E[Forecast run]
+    E --&gt; F[Post-processing]
+    F --&gt; G[Dissemination]</code></pre>
+<h3 id="processing-stages">Processing stages<a class="headerlink" href="#processing-stages" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Stage</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Frequency</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Data ingest</strong></td>
+<td style="text-align: left;">Download ECMWF, CMEMS Mercator, GFS, GFSWAVE, HYCOM</td>
+<td style="text-align: left;">Per cycle / daily</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Pre-processing</strong></td>
+<td style="text-align: left;">Generate WRF, ROMS, SWAN IC/BC and forcing files</td>
+<td style="text-align: left;">Per cycle</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Spin-up</strong></td>
+<td style="text-align: left;">72-hour standalone ROMS and SWAN spin-up runs</td>
+<td style="text-align: left;">1–4× daily</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Analysis cycling</strong></td>
+<td style="text-align: left;">6-hour coupled-model spin-up (T−6 to T0)</td>
+<td style="text-align: left;">Every 6 hours</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Forecast</strong></td>
+<td style="text-align: left;">10-day (00/12 UTC) or 90-hour (06/18 UTC) coupled run</td>
+<td style="text-align: left;">4× daily</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Post-processing</strong></td>
+<td style="text-align: left;">NetCDF reformatting, plotting, FTP delivery</td>
+<td style="text-align: left;">Concurrent with forecast</td>
+</tr>
+</tbody>
+</table>
+<h2 id="forecast-cycles">Forecast cycles<a class="headerlink" href="#forecast-cycles" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Cycle (UTC)</th>
+<th style="text-align: left;">Forecast length</th>
+<th style="text-align: left;">Atmospheric IC/BC</th>
+<th style="text-align: left;">Output products</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">00, 12</td>
+<td style="text-align: left;">10 days (240 h)</td>
+<td style="text-align: left;">ECMWF (primary), GFS (backup)</td>
+<td style="text-align: left;">FULL + ESSENTIAL</td>
+</tr>
+<tr>
+<td style="text-align: left;">06, 18</td>
+<td style="text-align: left;">90 hours</td>
+<td style="text-align: left;">GFS only</td>
+<td style="text-align: left;">FULL only</td>
+</tr>
+</tbody>
+</table>
+<h2 id="rome-accounts">ROME accounts<a class="headerlink" href="#rome-accounts" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Account</th>
+<th style="text-align: left;">Node</th>
+<th style="text-align: left;">Role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>cawofcst_prod</code></td>
+<td style="text-align: left;"><code>mdclogin0</code></td>
+<td style="text-align: left;">Production forecasts</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>cawofcst_dev</code></td>
+<td style="text-align: left;"><code>mdclogin1</code></td>
+<td style="text-align: left;">Research and development</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>web_prod</code> / <code>monitor</code></td>
+<td style="text-align: left;"><code>mdc-cawo1</code></td>
+<td style="text-align: left;">Internal website and monitoring</td>
+</tr>
+</tbody>
+</table>
+<h2 id="sections">Sections<a class="headerlink" href="#sections" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="production/">Production</a> — job scripts, spin-up, and forecast execution</li>
+<li><a href="dissemination/">Dissemination</a> — output products, formats, and delivery</li>
+<li><a href="troubleshooting/">Troubleshooting</a> — error handling, log analysis, and recovery</li>
+</ul>
+<h2 id="references">References<a class="headerlink" href="#references" title="Permanent link">&para;</a></h2>
+<ul>
+<li><code>OM_InaCAWO_Software-Manual.pdf</code> — Sections 2.2–2.2.6 (job architecture and timelines)</li>
+<li><code>OM_InaCAWO_Related-Software-Manual.pdf</code> — ROME supervision and SOPs</li>
+<li><code>20230615_InaCAWO_SAT_Operation_Test_M1_623_v1.0.pdf</code> — operational acceptance criteria</li>
+</ul>
 
 
 

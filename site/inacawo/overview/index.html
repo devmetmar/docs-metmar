@@ -614,6 +614,8 @@
       
         
       
+        
+      
     
     
     
@@ -744,6 +746,11 @@
                       
                     
                     
+                      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+                      <div class="md-sidebar-button__wrapper">
+                        <label class="md-sidebar-button" for="__toc"></label>
+                      </div>
+                    
                   
                   <div class="md-sidebar__inner">
                     
@@ -755,6 +762,47 @@
   
     
   
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#key-capabilities" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Key capabilities
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#system-context" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        System context
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        References
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -865,10 +913,53 @@
                   
 
 <h1 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h1>
-<p>BMKG previously operated independent atmospheric, wave, and ocean models, which limited the representation of cross-domain interactions in forecast outputs. To address this limitation, BMKG has implemented InaCAWO, a three-way coupled atmosphere-wave-ocean modeling system.</p>
-<p>InaCAWO provides significantly higher spatial resolution and improved physical coupling between model components, enabling more accurate simulation of complex air-sea processes.</p>
-<p>The system enhances forecast accuracy and spatial localization, supporting more reliable early warning and decision-making for severe weather and marine hazards.</p>
-<p>Go to the <a href="configuration/">Configurations</a> page for detailed information.</p>
+<p>BMKG previously operated independent atmospheric, wave, and ocean models, which limited the representation of cross-domain interactions in forecast outputs. To address this limitation, BMKG has implemented <strong>InaCAWO</strong> (Indonesia Coupled Atmosphere–Wave–Ocean), a three-way coupled modelling system built on the <a href="https://www.myroms.org/projects/coawst">COAWST</a> (Coupled-Ocean-Atmosphere-Wave-Sediment Transport) framework.</p>
+<p>InaCAWO seamlessly integrates three established models:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Component</th>
+<th style="text-align: left;">Model</th>
+<th style="text-align: left;">Role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Atmosphere</td>
+<td style="text-align: left;"><a href="https://www.mmm.ucar.edu/weather-research-and-forecasting-model">WRF</a></td>
+<td style="text-align: left;">Atmospheric dynamics and surface forcing</td>
+</tr>
+<tr>
+<td style="text-align: left;">Ocean</td>
+<td style="text-align: left;"><a href="https://www.myroms.org/">ROMS</a></td>
+<td style="text-align: left;">Three-dimensional ocean circulation</td>
+</tr>
+<tr>
+<td style="text-align: left;">Waves</td>
+<td style="text-align: left;"><a href="../swan/">SWAN</a></td>
+<td style="text-align: left;">Wind-wave generation and propagation</td>
+</tr>
+</tbody>
+</table>
+<p>The three-way coupling approach, pioneered by <a href="https://doi.org/10.1016/j.ocemod.2010.03.003">Warner et al. (2010)</a>, allows direct exchange of critical metocean surface data between models through the <a href="https://web.cels.anl.gov/projects/climate/mct/">Model Coupling Toolkit (MCT)</a>. Each component is aware of and responds to the others, much as these processes occur in nature.</p>
+<h2 id="key-capabilities">Key capabilities<a class="headerlink" href="#key-capabilities" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>High resolution</strong> — uniform 3 km grid covering the Indonesian archipelago (90–145°E, 15°S–15°N)</li>
+<li><strong>Improved coupling</strong> — representation of atmosphere–wave–ocean interactions in a single integrated system</li>
+<li><strong>Operational forecasting</strong> — four cycles per day (00, 06, 12, 18 UTC) on BMKG HPC</li>
+<li><strong>Extended lead times</strong> — 10-day forecasts at 00/12 UTC; 90-hour forecasts at 06/18 UTC</li>
+</ul>
+<p>Compared to its predecessors, InaCAWO provides significantly higher spatial resolution, enabling finer-grained simulation of complex air–sea processes and more localized forecasts for severe weather and marine hazards — particularly tropical cyclones affecting southern Indonesian waters.</p>
+<h2 id="system-context">System context<a class="headerlink" href="#system-context" title="Permanent link">&para;</a></h2>
+<p>InaCAWO is the coupled forecast component of the BMKG <strong>Maritime Meteorological System (MMS1)</strong>. It receives global model data as initial and boundary conditions, runs on the BMKG HPC under the Baron <strong>ROME</strong> (Real-Time Operational Modeling Environment) workflow manager, and delivers products to downstream analysis, archiving (MANDALA), and dissemination systems.</p>
+<p>Go to the <a href="configuration/">Configurations</a> page for model setup details, or the <a href="../operational/">Operational Flow</a> for the production workflow.</p>
+<h2 id="references">References<a class="headerlink" href="#references" title="Permanent link">&para;</a></h2>
+<p>Source documents in <code>refs/inacawo/</code>:</p>
+<ul>
+<li><code>AGU_InaCAWO_Final_Draft-print.pdf</code> — scientific introduction</li>
+<li><code>CAWO_ValidationStudyReport.pdf</code> — one-year validation study (Baron Weather, 2023)</li>
+<li><code>OM_InaCAWO_Software-Manual.pdf</code> — system architecture and software manual (Baron Weather, 2024)</li>
+</ul>
 
 
 

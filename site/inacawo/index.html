@@ -569,6 +569,8 @@
       
         
       
+        
+      
     
     
     
@@ -699,6 +701,11 @@
                       
                     
                     
+                      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+                      <div class="md-sidebar-button__wrapper">
+                        <label class="md-sidebar-button" for="__toc"></label>
+                      </div>
+                    
                   
                   <div class="md-sidebar__inner">
                     
@@ -710,6 +717,25 @@
   
     
   
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#sections" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Sections
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -790,20 +816,21 @@
                   
 
 <h1 id="inacawo">InaCAWO<a class="headerlink" href="#inacawo" title="Permanent link">&para;</a></h1>
-<p>InaCAWO, stands for Indonesia Coupled Atmosphere Wave Ocean, is a state-of-the art high-resolution numerical modelling to support marine weather services in Indonesia Archipelago.<br></p>
-<p>Let's dive down into the following sections:</p>
+<p><strong>Indonesia Coupled Atmosphere–Wave–Ocean</strong> is a state-of-the-art high-resolution numerical modelling system that supports marine weather services across the Indonesian archipelago. It replaces BMKG's previously independent atmospheric, wave, and ocean models with a three-way coupled system running on the BMKG HPC.</p>
+<h2 id="sections">Sections<a class="headerlink" href="#sections" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="overview/">Overview</a></li>
-<li><a href="overview/configuration/">Configurations</a></li>
-<li><a href="operational/">Operational Flow</a><ul>
-<li><a href="operational/production/">Production</a></li>
-<li><a href="operational/dissemination/">Dissemination</a></li>
-<li><a href="operational/troubleshooting/">Troubleshooting</a></li>
+<li><a href="overview/">Overview</a> — system background, capabilities, and validation</li>
+<li><a href="overview/configuration/">Configurations</a> — model components, domain, input data, and HPC resources</li>
+<li><a href="operational/">Operational Flow</a> — automated production pipeline<ul>
+<li><a href="operational/production/">Production</a> — job scripts, spin-up, and forecast execution</li>
+<li><a href="operational/dissemination/">Dissemination</a> — output products and delivery</li>
+<li><a href="operational/troubleshooting/">Troubleshooting</a> — error handling and log analysis</li>
 </ul>
 </li>
-<li><a href="tutorial/">Tutorial</a><ul>
-<li><a href="tutorial/forecast/">Forecast Mode</a></li>
-<li><a href="tutorial/hindcast/">Hindcast Mode</a></li>
+<li><a href="tutorial/">Tutorial</a> — hands-on guides<ul>
+<li><a href="tutorial/install/">Installation</a> — HPC deployment</li>
+<li><a href="tutorial/forecast/">Forecast Mode</a> — operational forecast workflow</li>
+<li><a href="tutorial/hindcast/">Hindcast Mode</a> — long-term reanalysis simulations</li>
 </ul>
 </li>
 </ul>

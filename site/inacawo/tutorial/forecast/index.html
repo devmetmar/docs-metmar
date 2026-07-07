@@ -15,7 +15,7 @@
         <link rel="canonical" href="https://docs.pusmar.org/inacawo/tutorial/forecast/">
       
       
-        <link rel="prev" href="../">
+        <link rel="prev" href="../install/">
       
       
         <link rel="next" href="../hindcast/">
@@ -571,6 +571,8 @@
       
         
       
+        
+      
     
     
     
@@ -627,6 +629,33 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../install/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Installation
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -638,6 +667,23 @@
       
         
       
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Forecast Mode
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="././" class="md-nav__link md-nav__link--active">
         
@@ -654,6 +700,142 @@
   
 
       </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#forecast-schedule" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Forecast schedule
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#end-to-end-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        End-to-end workflow
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="End-to-end workflow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-data-ingest-and-pre-processing" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        1. Data ingest and pre-processing
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-spin-up-and-analysis-cycling" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        2. Spin-up and analysis cycling
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-forecast-execution" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        3. Forecast execution
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-post-processing-and-delivery" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        4. Post-processing and delivery
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-differences-from-hindcast-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Key differences from hindcast mode
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#accounts-and-access" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Accounts and access
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#monitoring-a-forecast-cycle" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Monitoring a forecast cycle
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        References
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -781,6 +963,11 @@
                       
                     
                     
+                      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+                      <div class="md-sidebar-button__wrapper">
+                        <label class="md-sidebar-button" for="__toc"></label>
+                      </div>
+                    
                   
                   <div class="md-sidebar__inner">
                     
@@ -792,6 +979,130 @@
   
     
   
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#forecast-schedule" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Forecast schedule
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#end-to-end-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        End-to-end workflow
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="End-to-end workflow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-data-ingest-and-pre-processing" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        1. Data ingest and pre-processing
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-spin-up-and-analysis-cycling" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        2. Spin-up and analysis cycling
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-forecast-execution" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        3. Forecast execution
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-post-processing-and-delivery" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        4. Post-processing and delivery
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-differences-from-hindcast-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Key differences from hindcast mode
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#accounts-and-access" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Accounts and access
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#monitoring-a-forecast-cycle" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Monitoring a forecast cycle
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        References
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -877,6 +1188,8 @@
       
         
       
+        
+      
     
     
     
@@ -906,13 +1219,154 @@
 <h1 id="forecast-mode">Forecast Mode<a class="headerlink" href="#forecast-mode" title="Permanent link">&para;</a></h1>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>The hands-on in this section is intended for internal BMKG users, non-BMKG users may still be able to follow the tutorial without access to the computational resources.</p>
+<p>The hands-on in this section is intended for internal BMKG users. Non-BMKG users may still be able to follow the tutorial without access to the computational resources.</p>
 </div>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p>Please contact the team for further information at <a href="mailto:produksi.maritim@bmkg.go.id">produksi.maritim@bmkg.go.id</a>.</p>
 </div>
-<p><em>work in progress</em></p>
+<p>The operational InaCAWO forecast system runs automatically on the BMKG HPC under account <code>cawofcst_prod</code>, managed by ROME. This page describes how the forecast mode works; for hands-on hindcast exercises see <a href="../hindcast/">Hindcast Mode</a>.</p>
+<h2 id="forecast-schedule">Forecast schedule<a class="headerlink" href="#forecast-schedule" title="Permanent link">&para;</a></h2>
+<p>InaCAWO produces <strong>four forecast cycles per day</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Cycle (UTC)</th>
+<th style="text-align: left;">Forecast length</th>
+<th style="text-align: left;">Atmospheric IC/BC</th>
+<th style="text-align: left;">Output products</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>00, 12</strong></td>
+<td style="text-align: left;">10 days (240 h)</td>
+<td style="text-align: left;">ECMWF-IFS (primary), GFS (backup)</td>
+<td style="text-align: left;">FULL + ESSENTIAL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>06, 18</strong></td>
+<td style="text-align: left;">90 hours</td>
+<td style="text-align: left;">GFS only</td>
+<td style="text-align: left;">FULL only</td>
+</tr>
+</tbody>
+</table>
+<h2 id="end-to-end-workflow">End-to-end workflow<a class="headerlink" href="#end-to-end-workflow" title="Permanent link">&para;</a></h2>
+<pre class="mermaid"><code>flowchart TD
+    A[Download global model data] --&gt; B[Pre-process IC/BC]
+    B --&gt; C[72-hour ROMS/SWAN spin-up]
+    C --&gt; D[6-hour coupled analysis cycle]
+    D --&gt; E[Launch forecast run]
+    E --&gt; F[Post-process and disseminate]</code></pre>
+<h3 id="1-data-ingest-and-pre-processing">1. Data ingest and pre-processing<a class="headerlink" href="#1-data-ingest-and-pre-processing" title="Permanent link">&para;</a></h3>
+<p>Global model data are downloaded and converted into model-ready files:</p>
+<ul>
+<li><strong>WRF</strong> — ECMWF-IFS or GFS atmospheric IC/BC via WPS (<code>ungrib</code>, <code>metgrid</code>, <code>real</code>)</li>
+<li><strong>ROMS</strong> — CMEMS Mercator or HYCOM ocean IC/BC via MATLAB interpolation to the 70-layer grid</li>
+<li><strong>SWAN</strong> — ECMWF-Wave or GFSWAVE boundary conditions via MATLAB</li>
+</ul>
+<p>See <a href="../../overview/configuration/">Configurations</a> for data source details.</p>
+<h3 id="2-spin-up-and-analysis-cycling">2. Spin-up and analysis cycling<a class="headerlink" href="#2-spin-up-and-analysis-cycling" title="Permanent link">&para;</a></h3>
+<p>Before each forecast, the system runs:</p>
+<ol>
+<li><strong>Standalone spin-up</strong> (72 h) — ROMS and SWAN are driven with GFS analysis forcing to produce balanced hot-start files</li>
+<li><strong>Coupled analysis cycle</strong> (6 h) — the full 3-way coupled model runs from T−6 to T0, producing final ocean and wave initial conditions</li>
+</ol>
+<h3 id="3-forecast-execution">3. Forecast execution<a class="headerlink" href="#3-forecast-execution" title="Permanent link">&para;</a></h3>
+<p>The coupled COAWST model runs in time chunks to minimize wall-clock delay:</p>
+<p><strong>10-day runs (00/12 UTC):</strong> 0–24, 24–48, 48–96, 96–144, 144–192, 192–240 h</p>
+<p><strong>90-hour runs (06/18 UTC):</strong> shorter chunked sequence</p>
+<p>Each chunk waits for its IC/BC data, with ECMWF preferred and GFS as automatic fallback.</p>
+<h3 id="4-post-processing-and-delivery">4. Post-processing and delivery<a class="headerlink" href="#4-post-processing-and-delivery" title="Permanent link">&para;</a></h3>
+<p>As forecast output timesteps become available:</p>
+<ul>
+<li>WRF and ROMS/SWAN outputs are converted to CF-1.8 NetCDF (FULL and ESSENTIAL)</li>
+<li>Products are FTP-delivered to downstream systems</li>
+<li>Plot scripts generate graphical products for the internal monitoring website</li>
+</ul>
+<p>See <a href="../../operational/dissemination/">Dissemination</a> for output variable lists and file naming.</p>
+<h2 id="key-differences-from-hindcast-mode">Key differences from hindcast mode<a class="headerlink" href="#key-differences-from-hindcast-mode" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Aspect</th>
+<th style="text-align: left;">Forecast (operational)</th>
+<th style="text-align: left;">Hindcast</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Trigger</strong></td>
+<td style="text-align: left;">Automatic via ROME crontab</td>
+<td style="text-align: left;">Manual execution</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Input data</strong></td>
+<td style="text-align: left;">Near-real-time global models</td>
+<td style="text-align: left;">Pre-acquired reanalysis (ERA5, GLORYS12V1)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>ROMS OBCs</strong></td>
+<td style="text-align: left;">Zero-gradient velocities</td>
+<td style="text-align: left;">Radiation + nudging with climatology</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Time pressure</strong></td>
+<td style="text-align: left;">Must complete within service window</td>
+<td style="text-align: left;">No real-time constraint</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Workflow</strong></td>
+<td style="text-align: left;">ROME job tree with backups</td>
+<td style="text-align: left;">Simplified independent components</td>
+</tr>
+</tbody>
+</table>
+<h2 id="accounts-and-access">Accounts and access<a class="headerlink" href="#accounts-and-access" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Account</th>
+<th style="text-align: left;">Node</th>
+<th style="text-align: left;">Use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>cawofcst_prod</code></td>
+<td style="text-align: left;"><code>mdclogin0</code></td>
+<td style="text-align: left;">Production — do not modify without authorization</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>cawofcst_dev</code></td>
+<td style="text-align: left;"><code>mdclogin1</code></td>
+<td style="text-align: left;">R&amp;D testing and script development</td>
+</tr>
+</tbody>
+</table>
+<p>Software deployment repositories are available at <code>https://mms.bmkg.go.id/gitlab/mms/inacawo-deployment/</code>.</p>
+<h2 id="monitoring-a-forecast-cycle">Monitoring a forecast cycle<a class="headerlink" href="#monitoring-a-forecast-cycle" title="Permanent link">&para;</a></h2>
+<p>To check the status of a running or recent cycle:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># Set cycle (example: 12 UTC on 2024-05-30)</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nb">export</span><span class="w"> </span><span class="nv">CYCLE</span><span class="o">=</span><span class="m">2024053012</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="c1"># Check cycle log directory</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>ls<span class="w"> </span><span class="nv">$RT_LOGS</span>/cycles/<span class="nv">$CYCLE</span>/
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="c1"># Check for flagged errors</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>ls<span class="w"> </span><span class="nv">$RT_LOGS</span>/cycles/<span class="nv">$CYCLE</span>/verify/
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="c1"># Review cron launch logs</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>ls<span class="w"> </span><span class="nv">$RT_LOGSCRON</span>/<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span><span class="k">$(</span>date<span class="w"> </span>-u<span class="w"> </span>+%Y%m%d<span class="k">)</span>
+</span></code></pre></div>
+<p>For detailed job listings and error recovery procedures, see <a href="../../operational/production/">Production</a> and <a href="../../operational/troubleshooting/">Troubleshooting</a>.</p>
+<h2 id="references">References<a class="headerlink" href="#references" title="Permanent link">&para;</a></h2>
+<ul>
+<li><code>OM_InaCAWO_Software-Manual.pdf</code> — forecast job architecture (Jobs CF1, CF2)</li>
+<li><code>Local Training InaCAWO August 2023.pdf</code> — operational training materials</li>
+<li><code>20230615_InaCAWO_SAT_Operation_Test_M1_623_v1.0.pdf</code> — operational acceptance criteria</li>
+</ul>
 
 
 
@@ -952,7 +1406,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Tutorial">
+          <a href="../install/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Installation">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-arrow-left" viewBox="0 0 24 24"><path d="m12 19-7-7 7-7M19 12H5"/></svg>
@@ -962,7 +1416,7 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Tutorial
+                Installation
               </div>
             </div>
           </a>

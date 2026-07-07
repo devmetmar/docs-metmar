@@ -60,7 +60,7 @@ nav = [
         ] },
         { "Tutorial" = [
             "inacawo/tutorial/index.md",
-            # "inacawo/tutorial/install.md",
+            "inacawo/tutorial/install.md",
             "inacawo/tutorial/forecast.md",
             "inacawo/tutorial/hindcast.md",
         ] },
