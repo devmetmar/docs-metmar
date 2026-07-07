@@ -11,6 +11,5 @@ Let's dive down into the following sections:
     - [Dissemination](operational/dissemination.md)
     - [Troubleshooting](operational/troubleshooting.md)
 - [Tutorial](tutorial/index.md)
-    - [Installation](tutorial/installation.md)
     - [Forecast Mode](tutorial/forecast.md)
     - [Hindcast Mode](tutorial/hindcast.md)

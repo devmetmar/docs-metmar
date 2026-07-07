@@ -9,30 +9,34 @@
         <meta name="description" content="DMM's Technical Documentation">
       
       
-        <meta name="author" content="<your name here>">
+        <meta name="author" content="Center for Marine Meteorology">
       
+      
+        <link rel="canonical" href="https://docs.pusmar.org/inacawo/tutorial/hindcast/">
       
       
         <link rel="prev" href="../forecast/">
       
+      
+        <link rel="next" href="../../../swan/">
       
       
         
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
-      <meta name="generator" content="zensical-0.0.11">
+      <meta name="generator" content="zensical-0.0.47">
     
     
       
-        <title>Hindcast Mode - Documentation</title>
+        <title>Hindcast Mode - MarineMet Documentation</title>
       
     
     
       
         
       
-      <link rel="stylesheet" href="../../../assets/stylesheets/modern/main.bd6182e7.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/modern/main.5e19f6ca.min.css">
       
         
           
@@ -40,35 +44,6 @@
         <link rel="stylesheet" href="../../../assets/stylesheets/modern/palette.dfe2e883.min.css">
       
       
-  
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-  
-  <style>:root{}</style>
-
 
 
     
@@ -80,12 +55,12 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,500,500i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,500,500i,700,700i%7CJetBrains+Mono:400,400i,700,700i&amp;display=fallback">
         <style>:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"}</style>
       
     
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,a=__md_scope)=>JSON.parse(t.getItem(a.pathname+"."+e)),__md_set=(e,t,a=localStorage,_=__md_scope)=>{try{a.setItem(_.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
+    <script>__md_scope=new URL("../../..",location),__md_scope.pathname.endsWith("/")||(__md_scope=new URL(__md_scope.pathname+"/",location)),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,_=__md_scope)=>JSON.parse(t.getItem(_.pathname+"."+e)),__md_set=(e,t,_=localStorage,a=__md_scope)=>{try{_.setItem(a.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
     
       
 
@@ -106,7 +81,7 @@
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
-    <label class="md-overlay" for="__drawer"></label>
+    <label class="md-overlay" for="__drawer" aria-label="Navigation"></label>
     <div data-md-component="skip">
       
         
@@ -124,13 +99,13 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="Documentation" class="md-header__button md-logo" aria-label="Documentation" data-md-component="logo">
+    <a href="../../.." title="MarineMet Documentation" class="md-header__button md-logo" aria-label="MarineMet Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-book-open" viewBox="0 0 24 24"><path d="M12 7v14M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg>
 
     </a>
-    <label class="md-header__button md-icon" for="__drawer">
+    <label class="md-header__button md-icon" for="__drawer" aria-label="Navigation">
       
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-menu" viewBox="0 0 24 24"><path d="M4 5h16M4 12h16M4 19h16"/></svg>
     </label>
@@ -138,7 +113,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Documentation
+            MarineMet Documentation
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -184,7 +159,7 @@
     
       
       
-        <label class="md-header__button md-icon" for="__search">
+        <label class="md-header__button md-icon" for="__search" aria-label="Search">
           
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-search" viewBox="0 0 24 24"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
         </label>
@@ -196,6 +171,16 @@
       
     
     <div class="md-header__source">
+      
+        <a href="http://gitlab.pusmar.org/tyo/docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Gitlab
+  </div>
+</a>
       
     </div>
   </nav>
@@ -236,12 +221,61 @@
   
   
     
+      
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
     
       <li class="md-tabs__item md-tabs__item--active">
         <a href="../../" class="md-tabs__link">
           
   
   InaCAWO
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+      
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../swan/" class="md-tabs__link">
+          
+  
+  SWAN
 
         </a>
       </li>
@@ -271,14 +305,26 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="Documentation" class="md-nav__button md-logo" aria-label="Documentation" data-md-component="logo">
+    <a href="../../.." title="MarineMet Documentation" class="md-nav__button md-logo" aria-label="MarineMet Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-book-open" viewBox="0 0 24 24"><path d="M12 7v14M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg>
 
     </a>
-    Documentation
+    MarineMet Documentation
   </label>
+  
+    <div class="md-nav__source">
+      <a href="http://gitlab.pusmar.org/tyo/docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Gitlab
+  </div>
+</a>
+    </div>
   
   <ul class="md-nav__list" data-md-scrollfix>
     
@@ -296,8 +342,7 @@
   <span class="md-ellipsis">
     
   
-    Home
-  
+  Home
 
     
   </span>
@@ -357,8 +402,7 @@
   <span class="md-ellipsis">
     
   
-    InaCAWO
-  
+  InaCAWO
 
     
   </span>
@@ -379,8 +423,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    InaCAWO
-  
+  InaCAWO
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
@@ -427,8 +470,7 @@
   <span class="md-ellipsis">
     
   
-    Overview
-  
+  Overview
 
     
   </span>
@@ -491,8 +533,7 @@
   <span class="md-ellipsis">
     
   
-    Operational Flow
-  
+  Operational Flow
 
     
   </span>
@@ -554,8 +595,7 @@
   <span class="md-ellipsis">
     
   
-    Tutorial
-  
+  Tutorial
 
     
   </span>
@@ -576,8 +616,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Tutorial
-  
+  Tutorial
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
@@ -598,8 +637,7 @@
   <span class="md-ellipsis">
     
   
-    Forecast Mode
-  
+  Forecast Mode
 
     
   </span>
@@ -622,7 +660,7 @@
   
     <li class="md-nav__item md-nav__item--active">
       
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
       
       
         
@@ -635,8 +673,7 @@
   <span class="md-ellipsis">
     
   
-    Hindcast Mode
-  
+  Hindcast Mode
 
     
   </span>
@@ -646,15 +683,14 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <a href="./" class="md-nav__link md-nav__link--active">
+      <a href="././" class="md-nav__link md-nav__link--active">
         
   
   
   <span class="md-ellipsis">
     
   
-    Hindcast Mode
-  
+  Hindcast Mode
 
     
   </span>
@@ -682,9 +718,9 @@
         <li class="md-nav__item">
   <a href="#contents" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Contents
-      
+      </span>
     </span>
   </a>
   
@@ -693,9 +729,9 @@
         <li class="md-nav__item">
   <a href="#main-differences-from-the-forecast-system" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Main differences from the forecast system
-      
+      </span>
     </span>
   </a>
   
@@ -705,9 +741,9 @@
           <li class="md-nav__item">
   <a href="#preprocessing-workflow" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Preprocessing workflow
-      
+      </span>
     </span>
   </a>
   
@@ -716,9 +752,9 @@
           <li class="md-nav__item">
   <a href="#physical-considerations" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Physical Considerations
-      
+      </span>
     </span>
   </a>
   
@@ -732,9 +768,9 @@
         <li class="md-nav__item">
   <a href="#general-workflow" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         General Workflow
-      
+      </span>
     </span>
   </a>
   
@@ -743,9 +779,9 @@
         <li class="md-nav__item">
   <a href="#configurations" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Configurations
-      
+      </span>
     </span>
   </a>
   
@@ -754,9 +790,9 @@
         <li class="md-nav__item">
   <a href="#dependencies" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Dependencies
-      
+      </span>
     </span>
   </a>
   
@@ -766,9 +802,9 @@
           <li class="md-nav__item">
   <a href="#conda-environment" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Conda Environment
-      
+      </span>
     </span>
   </a>
   
@@ -777,9 +813,9 @@
           <li class="md-nav__item">
   <a href="#liveocean" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         LiveOcean
-      
+      </span>
     </span>
   </a>
   
@@ -793,9 +829,9 @@
         <li class="md-nav__item">
   <a href="#preparing-the-working-directory" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Preparing The Working Directory
-      
+      </span>
     </span>
   </a>
   
@@ -805,9 +841,9 @@
           <li class="md-nav__item">
   <a href="#modifying-envsh" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Modifying env.sh
-      
+      <span class="md-typeset">
+        Modifying <code>env.sh</code>
+      </span>
     </span>
   </a>
   
@@ -821,9 +857,9 @@
         <li class="md-nav__item">
   <a href="#global-reanalysis-data-acquisition" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Global Reanalysis Data Acquisition
-      
+      </span>
     </span>
   </a>
   
@@ -833,9 +869,9 @@
           <li class="md-nav__item">
   <a href="#era5-atmospheric-data" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         ERA5 Atmospheric Data
-      
+      </span>
     </span>
   </a>
   
@@ -844,9 +880,9 @@
           <li class="md-nav__item">
   <a href="#era5-waves-data" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         ERA5 Waves Data
-      
+      </span>
     </span>
   </a>
   
@@ -855,9 +891,9 @@
           <li class="md-nav__item">
   <a href="#mercator-glorys12v1-data" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Mercator GLORYS12V1 Data
-      
+      </span>
     </span>
   </a>
   
@@ -871,9 +907,9 @@
         <li class="md-nav__item">
   <a href="#pre-processing" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Pre Processing
-      
+      </span>
     </span>
   </a>
   
@@ -883,9 +919,9 @@
           <li class="md-nav__item">
   <a href="#wrf-forcing-files" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         WRF Forcing Files
-      
+      </span>
     </span>
   </a>
   
@@ -894,9 +930,9 @@
           <li class="md-nav__item">
   <a href="#swan-forcing-files" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         SWAN Forcing Files
-      
+      </span>
     </span>
   </a>
   
@@ -905,9 +941,9 @@
           <li class="md-nav__item">
   <a href="#roms-forcing-files" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         ROMS Forcing Files
-      
+      </span>
     </span>
   </a>
   
@@ -917,9 +953,9 @@
           <li class="md-nav__item">
   <a href="#1-generate-templates-for-icbc" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         1 Generate templates for ic/bc
-      
+      </span>
     </span>
   </a>
   
@@ -928,9 +964,9 @@
           <li class="md-nav__item">
   <a href="#2-populate-templates-for-icbc" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         2 Populate templates for ic/bc
-      
+      </span>
     </span>
   </a>
   
@@ -949,9 +985,9 @@
         <li class="md-nav__item">
   <a href="#running-the-hindcast" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Running the Hindcast
-      
+      </span>
     </span>
   </a>
   
@@ -961,9 +997,9 @@
           <li class="md-nav__item">
   <a href="#compiling-coawst" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Compiling COAWST
-      
+      </span>
     </span>
   </a>
   
@@ -972,9 +1008,9 @@
           <li class="md-nav__item">
   <a href="#running-scheme" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Running Scheme
-      
+      </span>
     </span>
   </a>
   
@@ -983,9 +1019,9 @@
           <li class="md-nav__item">
   <a href="#modifying-namelist-files" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Modifying Namelist Files
-      
+      </span>
     </span>
   </a>
   
@@ -994,9 +1030,9 @@
           <li class="md-nav__item">
   <a href="#copying-input-files" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Copying input files
-      
+      </span>
     </span>
   </a>
   
@@ -1005,9 +1041,9 @@
           <li class="md-nav__item">
   <a href="#running-a-day-cycle" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Running a day cycle
-      
+      </span>
     </span>
   </a>
   
@@ -1016,9 +1052,9 @@
           <li class="md-nav__item">
   <a href="#running-automation" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Running automation
-      
+      </span>
     </span>
   </a>
   
@@ -1032,9 +1068,9 @@
         <li class="md-nav__item">
   <a href="#post-processing" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Post Processing
-      
+      </span>
     </span>
   </a>
   
@@ -1044,9 +1080,9 @@
           <li class="md-nav__item">
   <a href="#wrf2d" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         WRF2D
-      
+      </span>
     </span>
   </a>
   
@@ -1055,9 +1091,9 @@
           <li class="md-nav__item">
   <a href="#wrf3d" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         WRF3D
-      
+      </span>
     </span>
   </a>
   
@@ -1066,9 +1102,9 @@
           <li class="md-nav__item">
   <a href="#ocean2d" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Ocean2D
-      
+      </span>
     </span>
   </a>
   
@@ -1077,9 +1113,9 @@
           <li class="md-nav__item">
   <a href="#ocean3d" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Ocean3D
-      
+      </span>
     </span>
   </a>
   
@@ -1093,9 +1129,9 @@
         <li class="md-nav__item">
   <a href="#summary-and-common-problems" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Summary and Common Problems
-      
+      </span>
     </span>
   </a>
   
@@ -1125,6 +1161,68 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../swan/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  SWAN
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -1135,6 +1233,19 @@
               
               <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
                 <div class="md-sidebar__scrollwrap">
+                  
+                    
+                    
+                    
+                      
+                    
+                    
+                      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+                      <div class="md-sidebar-button__wrapper">
+                        <label class="md-sidebar-button" for="__toc"></label>
+                      </div>
+                    
+                  
                   <div class="md-sidebar__inner">
                     
 
@@ -1155,9 +1266,9 @@
         <li class="md-nav__item">
   <a href="#contents" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Contents
-      
+      </span>
     </span>
   </a>
   
@@ -1166,9 +1277,9 @@
         <li class="md-nav__item">
   <a href="#main-differences-from-the-forecast-system" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Main differences from the forecast system
-      
+      </span>
     </span>
   </a>
   
@@ -1178,9 +1289,9 @@
           <li class="md-nav__item">
   <a href="#preprocessing-workflow" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Preprocessing workflow
-      
+      </span>
     </span>
   </a>
   
@@ -1189,9 +1300,9 @@
           <li class="md-nav__item">
   <a href="#physical-considerations" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Physical Considerations
-      
+      </span>
     </span>
   </a>
   
@@ -1205,9 +1316,9 @@
         <li class="md-nav__item">
   <a href="#general-workflow" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         General Workflow
-      
+      </span>
     </span>
   </a>
   
@@ -1216,9 +1327,9 @@
         <li class="md-nav__item">
   <a href="#configurations" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Configurations
-      
+      </span>
     </span>
   </a>
   
@@ -1227,9 +1338,9 @@
         <li class="md-nav__item">
   <a href="#dependencies" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Dependencies
-      
+      </span>
     </span>
   </a>
   
@@ -1239,9 +1350,9 @@
           <li class="md-nav__item">
   <a href="#conda-environment" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Conda Environment
-      
+      </span>
     </span>
   </a>
   
@@ -1250,9 +1361,9 @@
           <li class="md-nav__item">
   <a href="#liveocean" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         LiveOcean
-      
+      </span>
     </span>
   </a>
   
@@ -1266,9 +1377,9 @@
         <li class="md-nav__item">
   <a href="#preparing-the-working-directory" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Preparing The Working Directory
-      
+      </span>
     </span>
   </a>
   
@@ -1278,9 +1389,9 @@
           <li class="md-nav__item">
   <a href="#modifying-envsh" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Modifying env.sh
-      
+      <span class="md-typeset">
+        Modifying <code>env.sh</code>
+      </span>
     </span>
   </a>
   
@@ -1294,9 +1405,9 @@
         <li class="md-nav__item">
   <a href="#global-reanalysis-data-acquisition" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Global Reanalysis Data Acquisition
-      
+      </span>
     </span>
   </a>
   
@@ -1306,9 +1417,9 @@
           <li class="md-nav__item">
   <a href="#era5-atmospheric-data" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         ERA5 Atmospheric Data
-      
+      </span>
     </span>
   </a>
   
@@ -1317,9 +1428,9 @@
           <li class="md-nav__item">
   <a href="#era5-waves-data" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         ERA5 Waves Data
-      
+      </span>
     </span>
   </a>
   
@@ -1328,9 +1439,9 @@
           <li class="md-nav__item">
   <a href="#mercator-glorys12v1-data" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Mercator GLORYS12V1 Data
-      
+      </span>
     </span>
   </a>
   
@@ -1344,9 +1455,9 @@
         <li class="md-nav__item">
   <a href="#pre-processing" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Pre Processing
-      
+      </span>
     </span>
   </a>
   
@@ -1356,9 +1467,9 @@
           <li class="md-nav__item">
   <a href="#wrf-forcing-files" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         WRF Forcing Files
-      
+      </span>
     </span>
   </a>
   
@@ -1367,9 +1478,9 @@
           <li class="md-nav__item">
   <a href="#swan-forcing-files" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         SWAN Forcing Files
-      
+      </span>
     </span>
   </a>
   
@@ -1378,9 +1489,9 @@
           <li class="md-nav__item">
   <a href="#roms-forcing-files" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         ROMS Forcing Files
-      
+      </span>
     </span>
   </a>
   
@@ -1390,9 +1501,9 @@
           <li class="md-nav__item">
   <a href="#1-generate-templates-for-icbc" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         1 Generate templates for ic/bc
-      
+      </span>
     </span>
   </a>
   
@@ -1401,9 +1512,9 @@
           <li class="md-nav__item">
   <a href="#2-populate-templates-for-icbc" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         2 Populate templates for ic/bc
-      
+      </span>
     </span>
   </a>
   
@@ -1422,9 +1533,9 @@
         <li class="md-nav__item">
   <a href="#running-the-hindcast" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Running the Hindcast
-      
+      </span>
     </span>
   </a>
   
@@ -1434,9 +1545,9 @@
           <li class="md-nav__item">
   <a href="#compiling-coawst" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Compiling COAWST
-      
+      </span>
     </span>
   </a>
   
@@ -1445,9 +1556,9 @@
           <li class="md-nav__item">
   <a href="#running-scheme" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Running Scheme
-      
+      </span>
     </span>
   </a>
   
@@ -1456,9 +1567,9 @@
           <li class="md-nav__item">
   <a href="#modifying-namelist-files" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Modifying Namelist Files
-      
+      </span>
     </span>
   </a>
   
@@ -1467,9 +1578,9 @@
           <li class="md-nav__item">
   <a href="#copying-input-files" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Copying input files
-      
+      </span>
     </span>
   </a>
   
@@ -1478,9 +1589,9 @@
           <li class="md-nav__item">
   <a href="#running-a-day-cycle" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Running a day cycle
-      
+      </span>
     </span>
   </a>
   
@@ -1489,9 +1600,9 @@
           <li class="md-nav__item">
   <a href="#running-automation" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Running automation
-      
+      </span>
     </span>
   </a>
   
@@ -1505,9 +1616,9 @@
         <li class="md-nav__item">
   <a href="#post-processing" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Post Processing
-      
+      </span>
     </span>
   </a>
   
@@ -1517,9 +1628,9 @@
           <li class="md-nav__item">
   <a href="#wrf2d" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         WRF2D
-      
+      </span>
     </span>
   </a>
   
@@ -1528,9 +1639,9 @@
           <li class="md-nav__item">
   <a href="#wrf3d" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         WRF3D
-      
+      </span>
     </span>
   </a>
   
@@ -1539,9 +1650,9 @@
           <li class="md-nav__item">
   <a href="#ocean2d" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Ocean2D
-      
+      </span>
     </span>
   </a>
   
@@ -1550,9 +1661,9 @@
           <li class="md-nav__item">
   <a href="#ocean3d" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Ocean3D
-      
+      </span>
     </span>
   </a>
   
@@ -1566,9 +1677,9 @@
         <li class="md-nav__item">
   <a href="#summary-and-common-problems" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Summary and Common Problems
-      
+      </span>
     </span>
   </a>
   
@@ -1601,6 +1712,7 @@
     <li class="md-path__item">
       <a href="../../.." class="md-path__link">
         
+  
   <span class="md-ellipsis">
     Home
   </span>
@@ -1616,9 +1728,25 @@
   
     
     
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
       <li class="md-path__item">
         <a href="../../" class="md-path__link">
           
+  
   <span class="md-ellipsis">
     InaCAWO
   </span>
@@ -1634,9 +1762,23 @@
   
     
     
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
       <li class="md-path__item">
         <a href="../" class="md-path__link">
           
+  
   <span class="md-ellipsis">
     Tutorial
   </span>
@@ -2476,7 +2618,7 @@ The codes should be run in sequence (step 1 – run ungrib, step 2 – run metgr
 <div class="tabbed-set tabbed-alternate" data-tabs="4:3"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><input id="__tabbed_4_3" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">Ungrib</label><label for="__tabbed_4_2">Metgrid</label><label for="__tabbed_4_3">Real</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="language-text highlight"><span class="filename">run_ungrib_loop_<jobid>.log</span><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>...
+<div class="language-text highlight"><span class="filename">run_ungrib_loop_&lt;jobid&gt;.log</span><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>...
 </span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>...
 </span><span id="__span-17-3"><a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a>!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 </span><span id="__span-17-4"><a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a>!  Successful completion of ungrib.   !
@@ -2493,7 +2635,7 @@ The codes should be run in sequence (step 1 – run ungrib, step 2 – run metgr
 </span></code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="language-text highlight"><span class="filename">run_metgrid_loop_<jobid>.log</span><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>+ mpiexec.hydra -bootstrap slurm -n 128 -ppn 32 ./metgrid.exe
+<div class="language-text highlight"><span class="filename">run_metgrid_loop_&lt;jobid&gt;.log</span><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>+ mpiexec.hydra -bootstrap slurm -n 128 -ppn 32 ./metgrid.exe
 </span><span id="__span-18-2"><a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a>Processing domain 1 of 1
 </span><span id="__span-18-3"><a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a>    ./TAVGSFC
 </span><span id="__span-18-4"><a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a>Processing 1995-01-05_12
@@ -2536,7 +2678,7 @@ The codes should be run in sequence (step 1 – run ungrib, step 2 – run metgr
 </span></code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="language-text highlight"><span class="filename">run_real_loop_<jobid>.log</span><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>starting wrf task          256  of          512
+<div class="language-text highlight"><span class="filename">run_real_loop_&lt;jobid&gt;.log</span><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>starting wrf task          256  of          512
 </span><span id="__span-19-2"><a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>starting wrf task          266  of          512
 </span><span id="__span-19-3"><a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a>starting wrf task          269  of          512
 </span><span id="__span-19-4"><a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a>starting wrf task          383  of          512
@@ -2596,7 +2738,7 @@ and modify the following:
 </span></code></pre></div></p>
 <details class="success">
 <summary>Click here to view the execution log.</summary>
-<div class="language-text highlight"><span class="filename">run_swan_bc_<jobid>.log</span><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>...
+<div class="language-text highlight"><span class="filename">run_swan_bc_&lt;jobid&gt;.log</span><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>...
 </span><span id="__span-23-2"><a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a>...
 </span><span id="__span-23-3"><a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a>✅ Processed era5_19950101
 </span><span id="__span-23-4"><a id="__codelineno-23-4" name="__codelineno-23-4" href="#__codelineno-23-4"></a>✅ Processed era5_19950102
@@ -2736,7 +2878,7 @@ and modify the following:
 </span></code></pre></div></p>
 <details class="success">
 <summary>Click here to view the execution log.</summary>
-<div class="language-text highlight"><span class="filename">log_ocnA0_<jobid>.log</span><pre><span></span><code><span id="__span-28-1"><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a>Running initialization day
+<div class="language-text highlight"><span class="filename">log_ocnA0_&lt;jobid&gt;.log</span><pre><span></span><code><span id="__span-28-1"><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a>Running initialization day
 </span><span id="__span-28-2"><a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a>dt0, dt1 1995-01-01 00:00:00 1995-01-01 00:00:00
 </span><span id="__span-28-3"><a id="__codelineno-28-3" name="__codelineno-28-3" href="#__codelineno-28-3"></a>------Forcing: ocnA0, backfill, 1995.01.01-1995.01.01 ------
 </span><span id="__span-28-4"><a id="__codelineno-28-4" name="__codelineno-28-4" href="#__codelineno-28-4"></a>* frc=ocnA0, day=1995.01.01, result=success, note=NONE
@@ -2955,6 +3097,22 @@ The postprocessed files will be placed on:
           </a>
         
         
+          
+          <a href="../../../swan/" class="md-footer__link md-footer__link--next" aria-label="Next: SWAN">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                SWAN
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </div>
+          </a>
+        
       </nav>
     
   
@@ -2988,11 +3146,10 @@ The postprocessed files will be placed on:
     
       
       
-      
-      <script id="__config" type="application/json">{"annotate":null,"base":"../../..","features":["announce.dismiss","content.code.annotate","content.code.copy","content.code.select","content.footnote.tooltips","content.tabs.link","content.tooltips","navigation.footer","navigation.indexes","navigation.instant","navigation.instant.prefetch","navigation.path","navigation.prune","navigation.tabs","navigation.top","navigation.tracking","search.highlight","toc.follow"],"search":"../../../assets/javascripts/workers/search.5df7522c.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
+      <script id="__config" type="application/json">{"annotate":null,"base":"../../..","features":["announce.dismiss","content.code.annotate","content.code.copy","content.code.select","content.footnote.tooltips","content.tabs.link","content.tooltips","navigation.footer","navigation.indexes","navigation.instant","navigation.instant.prefetch","navigation.path","navigation.prune","navigation.tabs","navigation.top","navigation.tracking","search.highlight","toc.follow"],"search":"../../../assets/javascripts/workers/search.b6b7e04f.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.21aa498e.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.0df4f2d0.min.js"></script>
       
     
   </body>
