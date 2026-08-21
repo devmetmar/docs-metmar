@@ -24,12 +24,13 @@ site_description = "DMM's Technical Documentation"
 # Read more: https://zensical.org/docs/setup/basics/#site_author
 site_author = "Center for Marine Meteorology"
 
-repo_url = "http://gitlab.pusmar.org/tyo/docs"
+repo_url = "https://github.com/devmetmar/docs-metmar"
 
 # The site_url is the canonical URL for your site. When building online
 # documentation you should set this.
 # Read more: https://zensical.org/docs/setup/basics/#site_url
-site_url = "https://docs.pusmar.org"
+# Project Pages for now; restore docs.pusmar.org later via custom domain + this URL.
+site_url = "https://devmetmar.github.io/docs-metmar/"
 
 # The copyright notice appears in the page footer and can contain an HTML
 # fragment.

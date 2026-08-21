@@ -2,9 +2,9 @@
 
 Technical documentation for marine meteorology systems maintained by the **Center for Marine Meteorology** (DMM), BMKG.
 
-Published site: [docs.pusmar.org](https://docs.pusmar.org)
+Published site: [devmetmar.github.io/docs-metmar](https://devmetmar.github.io/docs-metmar/)
 
-Repository: [gitlab.pusmar.org/tyo/docs](http://gitlab.pusmar.org/tyo/docs)
+Repository: [github.com/devmetmar/docs-metmar](https://github.com/devmetmar/docs-metmar)
 
 ## Contents
 
@@ -15,45 +15,40 @@ Repository: [gitlab.pusmar.org/tyo/docs](http://gitlab.pusmar.org/tyo/docs)
 
 ## Requirements
 
-- Python 3.x
+- Python 3.12+
 - [Zensical](https://zensical.org/) (static site generator)
 
 ## Local development
 
 ```bash
-# Install Zensical
-pip install zensical
+# Install dependencies (pinned in requirements.txt)
+pip install -r requirements.txt
 
 # Preview locally (default: http://127.0.0.1:8000)
 zensical serve
 
-# Build static site to ./site (optional; not used in production)
+# Build static site to ./site
 zensical build --clean
 ```
 
 ## Deployment
 
-The live site at [docs.pusmar.org](https://docs.pusmar.org) is served directly from this repository using Zensical's development server — there is no static build step or GitLab CI pipeline.
+The site is built and published to [GitHub Pages](https://devmetmar.github.io/docs-metmar/) by GitHub Actions on every push to `main` (see [`.github/workflows/docs.yml`](.github/workflows/docs.yml)).
 
-On the server, `run-app.sh` starts the server and keeps it running in a tmux session:
+One-time setup in the GitHub repo: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
 
-```bash
-# Start (or attach to) the docs tmux session
-tmux new -s docs -d ./run-app.sh
+A custom domain such as `docs.pusmar.org` can be added later under the same Pages settings (update `site_url` in `zensical.toml` to match).
 
-# Attach to an existing session
-tmux attach -t docs
-```
-
-`run-app.sh` runs `zensical serve -a 0.0.0.0:7799`, which is proxied to `docs.pusmar.org`. Zensical watches the `docs/` directory, so after pulling new changes on the server the site updates automatically without restarting the process.
+`run-app.sh` is a legacy helper for the old tmux/`zensical serve` hosting on the server; it is not used for GitHub Pages.
 
 ## Contributing
 
 ### 1. Get the repository
 
 ```bash
-git clone http://gitlab.pusmar.org/tyo/docs.git
-cd docs
+git clone https://github.com/devmetmar/docs-metmar.git
+cd docs-metmar
+pip install -r requirements.txt
 ```
 
 ### 2. Write or edit content
@@ -105,7 +100,7 @@ zensical serve
 
 Open [http://127.0.0.1:8000](http://127.0.0.1:8000) and check that the page renders correctly and appears in the navigation.
 
-### 5. Push to GitLab
+### 5. Push to GitHub
 
 ```bash
 git checkout -b your-branch
@@ -114,25 +109,21 @@ git commit -m "Add documentation for ..."
 git push -u origin your-branch
 ```
 
-Open a merge request on GitLab. Once merged, pull the changes on the server for them to appear on [docs.pusmar.org](https://docs.pusmar.org):
-
-```bash
-# On the server
-cd /home/opn/apps/docs
-git pull
-```
+Open a pull request on GitHub. Once merged to `main`, GitHub Actions rebuilds and deploys the site automatically.
 
 ## Project structure
 
 ```
 docs-metmar/
-├── docs/              # Markdown source files
-│   ├── index.md       # Site homepage
-│   ├── inacawo/       # InaCAWO documentation
-│   └── swan/          # SWAN documentation
-├── zensical.toml      # Site configuration and navigation
-├── run-app.sh         # Production server launcher
-└── site/              # Build output (generated; not used in production)
+├── .github/workflows/  # CI/CD (GitHub Pages deploy)
+├── docs/               # Markdown source files
+│   ├── index.md        # Site homepage
+│   ├── inacawo/        # InaCAWO documentation
+│   └── swan/           # SWAN documentation
+├── zensical.toml       # Site configuration and navigation
+├── requirements.txt    # Pinned build dependencies
+├── run-app.sh          # Legacy server launcher (unused for Pages)
+└── site/               # Build output (generated; gitignored)
 ```
 
 ## Contact
